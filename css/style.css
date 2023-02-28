@@ -1,0 +1,309 @@
+/*** Fonts **/
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/Gilroy-Regular.woff2') format('woff2'),
+        url('../fonts/Gilroy-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/Gilroy-Light.woff2') format('woff2'),
+        url('../fonts/Gilroy-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/Gilroy-Bold.woff2') format('woff2'),
+        url('../fonts/Gilroy-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/Gilroy-Medium.woff2') format('woff2'),
+        url('../fonts/Gilroy-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+/*** Global css here ***/
+body{ font-family:'Gilroy'; font-size: 16px; font-weight: 500; color: #727d88; }
+p{ font-size: 16px; }
+ul{ list-style: none; margin: 0px; padding: 0px; }
+a{ text-decoration: none; transition: all 0.3s ease-in-out; }
+img{ max-width: 100%; height: auto; }
+h1, h2, h3, h4, h5, h6{ color: #1d2025; }
+
+/*** header css here ******/
+header{ background: white; padding:20px 0px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.15); position: relative; z-index: 100; }
+header .right-header{ text-align: right; }
+header .right-header ul li{ display: inline-block; vertical-align: middle; padding:0 0 0 40px; }
+header .right-header ul li a{ color:#5b656c; }
+header .right-header ul li a:hover{ color: #004aad;  }
+header .right-header ul li img{ vertical-align: middle; margin-right: 5px; }
+header .right-header ul li a.button{ border: 1px solid #000000; padding:8px 30px; text-align: center; font-size: 16px; text-decoration: none; display: inline-block; border-radius: 4px; color: black; }
+header .right-header ul li a.button:hover{ background: #004aad; color: white; border-color:#004aad; }
+
+/*** Main content *****/
+.main-body{ padding:60px 0px; background: rgb(236,241,245); background: linear-gradient(180deg, rgba(236,241,245,1) 0%, rgba(255,255,255,1) 100%); }
+.main-page-heading{ padding-bottom: 30px; }
+.main-page-heading h1{ font-size: 24px; font-weight: 500; margin-bottom: 15px; }
+
+.riservation-sec{ padding:10px; border-radius: 10px; box-shadow: 0 2px 6px rgba(0, 0, 0, 0.16); background: white; }
+.riservation-sec .nav.form-menu{ justify-content: center; border-bottom: 1px solid #edeff2; }
+.riservation-sec .nav.form-menu .nav-link{ border: 0; background: none; border-bottom: 2px solid transparent; color:#727d88; margin: 0 15px; padding:15px 0px; }
+.riservation-sec .nav.form-menu .nav-link svg{ vertical-align: middle; margin-right: 5px; }
+.riservation-sec .nav.form-menu .nav-link.active{ color: #004aad; border-bottom: 2px solid #004aad; }
+.riservation-sec .nav.form-menu .nav-link.active svg{ fill: #004aad; }
+
+.riservation-sec .tab-content{ padding: 40px 60px 50px; }
+
+.form-top-row{ padding-bottom: 30px; }
+.form-top-row .left ul li{ display: inline-block; margin:0 5px 0 0px; }
+.form-top-row .left ul li a{ display: inline-block; padding:9px 12px; background:white; color: #727d88; font-size: 14px; border-radius: 7px;  }
+.form-top-row .left ul li a:hover,
+.form-top-row .left ul li.active a{ color: #517597; background:#e8f5ff; }
+
+.form-top-row .right{ text-align: right; }
+.form-top-row .right ul li{ display: inline-block; vertical-align: top; margin-left:15px; }
+.form-top-row .right li{ position: relative; }
+
+.form-top-row .right li.traveller::before{ content: ''; width:24px; height:20px; position: absolute; left:0px; top:9px; background: url('../images/person.svg') 0 0 no-repeat; z-index: 1; }
+.form-top-row .right li.economy::before{ content: ''; width:20px; height:20px; position: absolute; left:2px; top:6px; background: url('../images/star.svg') 0 0 no-repeat; z-index: 1; }
+.form-top-row .right li.traveller select{ padding-left:30px; }
+.form-top-row .right li select{ border:0; padding: 5px 18px 5px 25px; cursor: pointer; outline: 0; font-family:'Gilroy'; color: #8b949d; background-color: transparent; position:relative; z-index: 2; }
+.form-top-row .right li select option{ font-family:Arial, Helvetica, sans-serif; background: white; padding: 0;}
+.form-top-row .right li select:focus{ box-shadow: none; }
+.form-top-row .right li.economy select,
+.form-top-row .right li.trip  select{ background: url('../images/down-arrow.svg') 100% center no-repeat; }
+
+.main-form-row .fields input.form-control{ border:1px solid #9097a0; padding: 18px 30px; height: auto; line-height: normal; border-radius: 7px; } 
+.main-form-row .fields .form-floating > label{ left: 30px; }
+.main-form-row .fields.loaction{ position: relative; }
+.main-form-row .fields.loaction::after{ content: ''; width: 20px; height: 20px; position: absolute; background-image: url('../images/location.svg'); background-repeat: no-repeat; background-position:center; left: 10px; top: 20px;  }
+.main-form-row .fields.loaction.to{ position: relative; }
+.main-form-row .fields.loaction.to::before{ width: 30px; height: 30px; border: 1px solid #9097a0; border-radius: 100%; background: url('../images/form-to-icon.png') center no-repeat #ffffff; content: ''; position: absolute; left:-28px; top: 15px; z-index: 1; }
+.main-form-row .form-floating > .form-control-plaintext ~ label, 
+.main-form-row .form-floating > .form-control:focus ~ label, 
+.main-form-row .form-floating > .form-control:not(:placeholder-shown) ~ label, 
+.main-form-row .form-floating > .form-select ~ label { transform: scale(.65) translateY(-.5rem) translateX(.15rem);  }
+.main-form-row .form-check-input{ border:1px solid #9097a0; }
+
+.main-form-row .start-date input[type=date],
+.main-form-row .end-date input[type=date]{ padding-left: 15px; padding-right: 15px; }
+
+.main-form-row .start-date input.datepicker,
+.main-form-row .end-date input.datepicker{ padding-left: 45px; padding-right: 15px; background: url('../images/calender.png') 15px center no-repeat;}
+
+
+
+.main-form-row .form-group.form-group-lg{  }
+.main-form-row .form-group.form-group-lg .input-group .select2.select2-container { width: 100% !important; }
+.main-form-row .fields.loaction .select2-selection--single{ border:1px solid #9097a0; margin: 0px; border-radius: 7px; padding: 6px 30px; }
+
+
+
+.button-tow{ padding-top: 20px; }
+.button-tow .button-box{ text-align: right; }
+.button-tow .submit-btn{ padding: 15px 50px; color:white; background: #004aad; cursor: pointer; border:1px solid #004aad; font-weight: bold; font-size: 16px; border-radius:4px; transition: all 0.3s ease-in-out; }
+.button-tow .submit-btn:hover{ background: white; color: #004aad; }
+
+.label-head label{ font-weight: bold; padding-bottom: 10px; color: #004aad; }
+.my-reserv-form-row .fields .form-control{ border:1px solid #9097a0; padding-left: 30px; padding-right: 30px; border-radius: 7px; }
+.my-reserv-form-row .fields .submit-btn{ padding: 15px 50px; color:white; background: #004aad; cursor: pointer; border:1px solid #004aad; font-weight: bold; font-size: 16px; border-radius:4px; transition: all 0.3s ease-in-out; }
+.my-reserv-form-row .fields .submit-btn:hover{ background: white; color: #004aad; }
+
+.special-offer{ padding: 50px 0px; }
+.special-offer .heading h4{ margin-bottom: 25px; font-size: 20px; font-weight: 500; }
+.special-offer .offer-box a{ display: flex; padding: 15px; border-radius: 7px; border: 1px solid #dde4ed; align-items: center; }
+.special-offer .offer-box a span.post-img{ width: 111px; height: 116px; overflow: hidden; border-radius: 7px; min-width: 111px; margin-right:30px; }
+.special-offer .offer-box a span.post-img img{ transition: all 0.3s ease-in-out; }
+.special-offer .offer-box a span.content{ font-weight: bold; padding:0 20px 0 0px;}
+.special-offer .offer-box a span.content h5{  color:#42484e; font-size: 18px; line-height: 24px; font-weight: bold; }
+.special-offer .offer-box a span.content p{  color: #004aad; font-size: 17px; margin: 0; }
+.special-offer .offer-box a:hover{ border: 1px solid transparent; }
+.special-offer .offer-box a:hover span.post-img img{ transform: scale(1.2); }
+
+/***** Footer css here ****/
+footer{ padding: 50px 0 30px; }
+footer .top-footer{ padding-bottom: 36px; }
+footer .top-footer .footer-menu h5{ color: #30353c; font-size: 16px; font-weight: bold; margin-bottom: 15px; }
+footer .top-footer .footer-menu ul li{ padding-bottom:10px; font-size: 13px; }
+footer .top-footer .footer-menu ul li a{ color:#77828b; }
+footer .top-footer .footer-menu ul li a:hover{ color: #004aad; }
+footer .top-footer .footer-menu.social ul li{ padding-bottom: 10px; }
+footer .top-footer .footer-menu.social ul li img{ margin-right: 15px; }
+footer .top-footer .footer-menu.social ul li a{ display: inline-block; }
+.footer-subscription{ border-left: 1px solid #dde4ed; }
+.footer-subscription .subscription-sec{ padding-left: 100px; }
+.footer-subscription .subscription-sec img{ margin-bottom: 15px; }
+.footer-subscription .subscription-sec h3{ color: #004aad; font-size: 25px; margin-bottom: 15px; font-weight: bold; }
+.footer-subscription .subscription-sec p{ font-size: 14px; color: #77828b; }
+.footer-subscription .subscription-sec form{ position: relative; margin:25px 0 0 0px; }
+.footer-subscription .subscription-sec form input.input{ width: 100%; border-radius: 4px; border: 1px solid #989fa8; padding: 14px 27px; font-size: 15px; color: #30353c;  }
+.footer-subscription .subscription-sec form input[type=submit]{ font-size: 0; background: url('../images/send.png') center no-repeat; width: 23px; height: 23px; position: absolute; right: 22px; top: 15px; border: 0; }
+
+footer .bottom-footer{ padding-top: 30px; border-top: 1px solid #dde4ed; }
+footer .bottom-footer .copyright p{ font-size: 13px; color: #9aa0a9; margin: 0px; }
+footer .bottom-footer .other-links{ text-align: right; }
+footer .bottom-footer .other-links ul{ list-style: none; margin: 0px; padding: 0px; line-height: normal; }
+footer .bottom-footer .other-links ul li{ display: inline-block; vertical-align: middle; padding: 0 0 0 25px; font-size: 13px;}
+footer .bottom-footer .other-links ul li a{ color: #004aad; }
+footer .bottom-footer .other-links ul li a:hover{ text-decoration: underline; }
+
+
+
+
+
+/************** aditional css here *********/
+/**********Tabbing section*************/
+.nav-tabs{ border-bottom: none; padding-left: 10px;}
+.nav-tabs .nav-link { margin-bottom: 0; border: none; border-radius: 0; color: #fff; font-size: 16px; font-weight: bold; padding: 10px 35px; }
+.nav-tabs .nav-link i { font-size: 13px; position: relative; top: 0; transform: rotate(180deg); -webkit-transform: rotate(180deg); -ms-transform: rotate(180deg); -o-transform: rotate(180deg);}
+.nav-tabs .nav-link.active i{ transform: rotate(0deg); -webkit-transform: rotate(0deg); -ms-transform: rotate(0deg); -o-transform: rotate(0deg); }
+.submit-search{ display: flex; align-items: center; justify-content: center; }
+.submit-search i {font-size: 30px; margin-bottom: 5px; position: absolute; top: 50px; transition: all ease-in-out .3s; -webkit-transition: all ease-in-out .3s; -ms-transition: all ease-in-out .3s; -o-transition: all ease-in-out .3s; z-index: 1; }
+.submit-search input { color: #fff; border: none; font-size: 26px;	text-transform: uppercase; font-weight: bold; width: 100%; height: 100%; padding-top: 40px; background: #ec5849; color: #fff; transition: all ease-in-out .3s; -webkit-transition: all ease-in-out .3s; -ms-transition: all ease-in-out .3s; -o-transition: all ease-in-out .3s; }
+.submit-search input:hover{ opacity:.8; }
+.search-fields{ padding-top: 30px; padding-bottom: 10px; }
+.search-fields label { font-size: 18px;	font-weight: bold; margin-bottom: 30px; }
+.input-group-prepend span {	padding: 0;	width: 45px; height: 45px; line-height: 45px; background: #fff; border: none; justify-content: center; border-radius: 0; }
+.input-group-prepend i { color: #ec5849; font-size: 20px; }
+.form-control {	border-radius: 0;  border: none; }
+.traveller .form-control{ padding:5px 0 5px 40px; color: #8b949d;  font-size: 14px;   font-family: 'Gilroy'; }
+.traveller .form-control::placeholder{ color: #8b949d; }
+.input-group-text{ position: relative; }
+.input-group-text::after {content: "";background: rgba(0,0,0,.2);position: absolute;left: 45px;margin: auto;top: 0;bottom: 0;width: 1px; z-index: 1; height: 22px;}
+.select-option { position: relative;}
+select{ -webkit-appearance: none; appearance: none; }
+.input-group > .form-control:focus { z-index: 0; }
+.select-option::after { content: ""; position: absolute; right: 15px; top: 7px;	bottom: 0; z-index: 0; pointer-events: none; background: url('../images/down-arrow.svg') center no-repeat; height: 20px; width: 20px; }
+.form-control:focus{ box-shadow: none; }
+.form-control:focus-visible{ border: none; outline: none; }
+.ranger output {  position: absolute;background:#fff;width: 40px; height: 30px; text-align: center; color: #000; border-radius: 10px; display: inline-block; font: bold 15px/30px Georgia; bottom: 175%; left: 0; }
+.ranger output:after { content: ""; position: absolute;  width: 0;height: 0; border-top: 10px solid #fff; border-left: 5px solid transparent; border-right: 5px solid transparent;top: 100%; left: 50%; margin-left: -5px; margin-top: -1px; }
+.ranger form { position: relative; margin: 30px 0 0 0; }
+.ranger form input { width: 100%; }
+.search-fields .language-link img{  max-width: 25px; }
+.search-fields .language-link{ font-size: 16px; padding-right: 15px; }
+.search-fields .language-link::after{ font-size: 12px; }
+.search-fields .language-switcher { float: right; margin-top: 5px; }
+#collapseExample2 { position: absolute;	z-index: 2;	top: 30px; min-width: 90px; }
+.list-dropdown-passengers { list-style: none; position: absolute; z-index: 10; top:100%; padding: 20px;	width: 220px; opacity: 0; visibility: hidden;	border-radius: 5px;	box-shadow: 0px 0 8px 0 rgba(0, 0, 0, 0.2); transition: all 0.3s; background-color: #fff; text-align: left; }
+.form-top-row .right ul li li{ padding: 0px; margin: 0; }
+.form-top-row .right ul li.traveller{ max-width: 150px; }
+.list-persons-count { list-style: none;	padding-bottom: 5px; padding-left: 0;}
+.list-persons-count > li { display: flex; align-items: center; }
+.form-top-row .right ul.list-persons-count > li{ display: flex; padding: 5px 0px; }
+.list-persons-count > li:last-child .counter-add-item{ margin:0; }
+.list-persons-count > li > span:first-child { margin-right: auto; color: #222;	min-width:65px;}
+.counter-add-item {	display: flex; align-items: center; margin-bottom:0px;}
+.counter-add-item a { width: 30px; height: 30px; font-size: 20px; font-weight: 400;	border: 1px solid #004aad;	border-radius: 5px;	color: #fff; background: #fff;    text-decoration: none; background: #004aad;}
+.counter-add-item input[type="text"] { margin: 0 5px; padding: 0; width: 40px; height: 30px; line-height: 30px;	font-size: 14px; font-weight: 400; text-align: center;}
+.counter-add-item > * {	display: flex; align-items: center;	justify-content: center; height: 50px;	width: 50px; }
+.free-apps img { width: 100%; filter: grayscale(100%); }
+.free-apps p { margin-top: 20px; margin-bottom: 0; }
+.social { padding-left: 25PX; }
+.form-control[readonly] { background-color: #fff; }
+.list-dropdown-passengers.is-active { opacity: 1; visibility: visible; }
+input[type="date"] { -webkit-appearance: none; }
+input[type="date"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-calendar-picker-indicator { opacity:0; -webkit-appearance: none; background: transparent; }
+.datepicker.datepicker-dropdown.dropdown-menu{ padding: 10px; width: 250px; }
+.datepicker.datepicker-dropdown.dropdown-menu .table-condensed { width: 100%; }
+body .select2-container--default .select2-selection--single{ border: none; border-radius: 0; height: 100%; line-height: normal !important; }
+body .select2-container--default .select2-selection--single .select2-selection__rendered{ line-height: 45px; font-size: 1rem; }
+body .select2-container--default .select2-selection--single .select2-selection__arrow{ top: 18px; right: 11px; }
+
+
+/******** Mobile responsive css here **********/
+@media only screen and (min-width: 768px) {
+	.mobile-show{ display: none; }
+	.form-top-row .mobile-show{ display: none; }
+	.form-top-row .right ul li.mobile-show{ display: none; }
+}
+@media only screen and (max-width: 991px) {
+	header .right-header ul li{ padding-left: 20px; }	
+	.riservation-sec .tab-content { padding: 30px 40px 40px;  }
+
+}
+
+@media (min-width:768px) and (max-width:991px) {
+	header .right-header ul li a{ font-size: 0; }
+	.special-offer .offer-box a span.post-img{ margin-right: 10px; }
+	.special-offer .offer-box a span.content{ padding: 0 0px 0 0px; }
+}
+@media only screen and (max-width: 767px) {
+	.mobile-hide{ display: none; }
+
+	.main-form-row .fields.loaction.to::before{ display: none; }
+	.riservation-sec .tab-content { padding: 30px 20px 30px; }
+	.form-top-row .right,
+	.form-top-row .left{ text-align: center; }
+	.button-tow .button-box{ text-align: center; padding-top: 20px; }
+	.button-tow .button-box .submit-btn,
+	.my-reserv-form-row .fields .submit-btn{ display: block; width: 100%; }
+	header .right-header ul li { padding-left:10px; }
+	.main-body{ padding:40px 0px 25px; background: #eff3f7; }
+	.main-page-heading { padding-bottom: 10px; }
+	.special-offer .heading h4{ text-align: center; }
+	.special-offer { padding:40px 0px 10px;  }
+	.special-offer .offer-box a{ margin: 5px 0px; }
+	
+	footer { padding: 30px 0 30px; }
+	.main-form-row .fields.col-sm-6{ width: 50%; }
+	footer .top-footer .footer-menu.col-sm-6{ width: 50%; order: 2; }
+	.footer-subscription .subscription-sec{ padding: 0; text-align: center; }
+	.footer-subscription{ order: 1; padding-bottom: 40px; }
+	footer .bottom-footer .copyright{ order: 2; }
+	footer .bottom-footer .copyright p{ text-align: center; }
+	footer .bottom-footer .other-links{ order: 1; padding-bottom: 15px; text-align: center; }
+	footer .bottom-footer .other-links ul{ display: flex; justify-content: center; }
+	footer .bottom-footer .other-links ul li{ padding: 0 10px; }
+	footer .bottom-footer{ padding-top: 20px; }
+	footer .bottom-footer .other-links ul{ border-bottom: 1px solid #dde4ed; padding-bottom: 20px; }
+	footer .top-footer { padding-bottom:25px; }
+	.footer-subscription .subscription-sec p{ max-width: 90%; margin: 0 auto; }
+	.form-top-row .left{ display: none; }
+	.form-top-row .right li select{ padding: 5px 18px 5px 5px; background-position: 100%; }
+	.form-top-row .right li.traveller select {padding-left:5px; }
+	.form-top-row .right li.economy::before,
+	.form-top-row .right li.traveller::before{ display: none; }
+	.form-top-row .right ul li{ margin: 0 5px; }
+	.form-top-row {  padding-bottom: 20px; }
+	
+	.mobile-align-center{ align-items: center; }
+	.navbar > .container-fluid.align-right{ justify-content: right; }
+	header .right-header ul.mobile-icons li{ padding-left: 0px; padding-right: 15px; }
+	header .right-header ul.mobile-icons li img{ display: block; }
+	.navbar-toggler{ border: 0px; padding: 0px; }
+	.navbar-collapse{ position: absolute;  top: 100%; right: 0; min-width: 200px; width: 100%; text-align: left; background: white; border-radius: 7px; padding: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);}
+	.special-offer .offer-box a{ background: white; }
+	.traveller .form-control{ padding: 5px 0 5px 5px; }
+	.form-top-row .right ul li.traveller { max-width: 100px;  }
+
+}
+@media only screen and (max-width: 480px) {
+	.riservation-sec .tab-content{ padding: 10px; }
+	.form-top-row .right li select { max-width: 90px; }
+	.form-top-row .right ul li { margin: 0 2px; }
+	
+}
+@media only screen and (max-width: 375px) {
+		
+	
+}
+
+
+

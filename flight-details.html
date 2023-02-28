@@ -1,0 +1,436 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Cheap airline tickets. Only here you'll get the cheapest airline ticket deals available. We search all airlines for cheap flights and show you  the most discounted airfares. Get your cheapest ticket here - with price guarantee!" />
+    <meta name="keywords" content="discount airfares, cheap flights, discount flights" />
+    <title>Flight Details | MilitaryFares</title>
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/favicon-32x32.png" >
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.1/css/bootstrap-datepicker.css'>
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" >
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/css/select2.min.css" rel="stylesheet"/>
+</head>
+<body>
+<header>
+<div class="container-xxl">
+    <div class="row mobile-align-center">
+        <div class="col col-sm-4 left-header"><a href="/"><img src="images/logo_new_mil.png" alt="Logo"></a></div>
+        <div class="col col-sm-8 right-header">
+            <nav class="navbar navbar-expand-lg mobile-show">
+                <div class="container-fluid align-right">
+                    <ul class="mobile-icons">
+                        <li><a href="/"><img src="images/flag.png" alt="USD"></a></li>
+                        <li><a href="/"><img src="images/user-icon.png" alt="USD"></a></li>
+                    </ul>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#"><img src="images/phone.svg" alt="Call"> 1 (212)-595-0865</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="#"><img src="images/head-phone.svg" alt="Support"> Support</a>
+                        </li>
+                    </ul>                        
+                    </div>
+                </div>
+                </nav>
+            <ul class="mobile-hide">
+                <li><a href="/"><img src="images/phone.svg" alt="Call"> 1 (212)-595-0865</a></li>
+                <li><a href="/"><img src="images/head-phone.svg" alt="Support"> Support</a></li>
+                <li><a href="/"><img src="images/flag.png" alt="USD"> USD - US$</a></li>
+                <li><a href="/" class="button">Login</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+</header>
+<div class="main-body">
+<div class="container-xxl">
+    <div class="main-page-heading">
+        <div class="row">
+            <div class="col-md-12 text-left">
+                <h1>Book A Flight</h1>
+            </div>
+        </div>
+    </div>
+    
+    <section class="riservation-sec">
+        <div class="row">
+            <div class="col-md-12">
+                <ul class="nav form-menu mb-3" id="pills-tab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="#a1a8b3" width="20" height="20"><path d="M192 93.7C192 59.5 221 0 256 0c36 0 64 59.5 64 93.7l0 66.3L497.8 278.5c8.9 5.9 14.2 15.9 14.2 26.6v56.7c0 10.9-10.7 18.6-21.1 15.2L320 320v80l57.6 43.2c4 3 6.4 7.8 6.4 12.8v42c0 7.8-6.3 14-14 14c-1.3 0-2.6-.2-3.9-.5L256 480 145.9 511.5c-1.3 .4-2.6 .5-3.9 .5c-7.8 0-14-6.3-14-14V456c0-5 2.4-9.8 6.4-12.8L192 400V320L21.1 377C10.7 380.4 0 372.7 0 361.8V305.1c0-10.7 5.3-20.7 14.2-26.6L192 160V93.7z"/></svg> Flight</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" fill="#a1a8b3" width="20" height="20"><path d="M192 0c-41.8 0-77.4 26.7-90.5 64H64C28.7 64 0 92.7 0 128V448c0 35.3 28.7 64 64 64H320c35.3 0 64-28.7 64-64V128c0-35.3-28.7-64-64-64H282.5C269.4 26.7 233.8 0 192 0zm0 64a32 32 0 1 1 0 64 32 32 0 1 1 0-64zM72 272a24 24 0 1 1 48 0 24 24 0 1 1 -48 0zm104-16H304c8.8 0 16 7.2 16 16s-7.2 16-16 16H176c-8.8 0-16-7.2-16-16s7.2-16 16-16zM72 368a24 24 0 1 1 48 0 24 24 0 1 1 -48 0zm88 0c0-8.8 7.2-16 16-16H304c8.8 0 16 7.2 16 16s-7.2 16-16 16H176c-8.8 0-16-7.2-16-16z"/></svg> My Reservation</button>
+                    </li>
+                    
+                </ul>
+                <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+                    <form>
+                        <div class="form-top-row row">
+                            <div class="col-md-6 left">
+                                <ul>
+                                    <li class="active"><a href="#">Round Trip</a></li>
+                                    <li><a href="#">One Way</a></li>
+                                    <li><a href="#">Multi City</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6 right">
+                                <ul>
+                                    <li class="trip mobile-show"><select class="form-select form-select-sm" aria-label=".form-select-sm example">
+                                        <option value="1" selected>Round Trip</option>
+                                        <option value="2">One Way</option>
+                                        <option value="3">Multi City</option>
+                                        </select></li>
+                                    <li class="traveller"><div class="form-group form-group-lg">
+                                        <div class="input-group select-option passenger-dropdown">
+                                          <input type="text" readonly class="form-control" placeholder="2 adults" aria-describedby="basic-addon1">
+                                        </div>
+                                        <ul class="list-dropdown-passengers">
+                                          <li>
+                                            <ul class="list-persons-count">
+                                              <li>
+                                                <span>Adults:</span>
+                                                
+                                                <div class="counter-add-item ">
+                                                  <a class="decrease-btn" href="javascript:;">-</a>
+                                                  <input type="text" value="0" class="count">
+                                                  <a class="increase-btn" href="javascript:;">+</a>
+                                                </div><!-- .counter-add-item end -->
+                                              </li>
+                                              <li>
+                                                <span>Childs:</span>
+                                                <div class="counter-add-item">
+                                                  <a class="decrease-btn" href="javascript:;">-</a>
+                                                  <input type="text" value="0" class="count">
+                                                  <a class="increase-btn" href="javascript:;">+</a>
+                                                </div><!-- .counter-add-item end -->
+                                              </li>
+                                              <li>
+                                                <span>Infants:</span>
+                                                <div class="counter-add-item">
+                                                  <a class="decrease-btn" href="javascript:;">-</a>
+                                                  <input type="text" value="0" class="count">
+                                                  <a class="increase-btn" href="javascript:;">+</a>
+                                                </div><!-- .counter-add-item end -->
+                                              </li>
+                                              
+                                           
+                                            </ul><!-- .list-persons-count end -->
+                                          </li>
+                                         
+                                         
+                                       
+                                        </ul>
+                                      
+                                        
+                                      </div></li>
+                                      <li class="economy"><select class="form-select form-select-sm" aria-label=".form-select-sm example">
+                                        <option value="1" selected>Economy</option>
+                                        <option value="2">Premium Economy</option>
+                                        <option value="3">Business</option>
+                                        <option value="4">First Class</option>
+                                        </select></li>
+                            </ul>
+                        </div>
+                        </div>
+                        <div class="row main-form-row">
+                            <div class="col-md-12">
+                                <div id="myTabContent" class="row">
+                                    <div class="col-md-4 d-block justify-content-between tab-col">
+                                        <div class="form-group form-group-lg">
+                                          <div class="input-group mb-3 fields loaction">
+                                            
+                                            <select class="js-example-basic-single form-control" name="state">
+                                              <option value="AL">Srinagar</option>
+                                              <option value="AL">Kerela</option>
+                                              <option value="AL">Goa</option>
+                                              <option value="WY">Nainital</option>
+                                            </select>
+                                          </div>
+                                          
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 d-block justify-content-between tab-col">
+                                        <div class="form-group form-group-lg">
+                                        
+                                        <div class="input-group mb-3 fields loaction to">
+                                        
+                                        <select class="js-example-basic-single form-control" name="state">
+                                            <option value="AL">Srinagar</option>
+                                            <option value="AL">Kerela</option>
+                                            <option value="AL">Goa</option>
+                                            <option value="WY">Nainital</option>
+                                        </select>
+                                        
+                                        </div>
+                                        
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2 col-sm-6 col-6 d-block justify-content-between departure tab-col">
+                                        <div class="form-group form-group-lg pr-sm-1">
+                                            <div class="input-group mb-3 fields start-date">
+                                            <input class="datepicker form-control"  placeholder="dd/mm/yyy"  aria-describedby="basic-addon1" />                                         
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                        <div class="col-md-2 col-sm-6 col-6 d-block justify-content-between departure tab-col">
+                                            <div class="form-group form-group-lg pl-sm-1">
+                                                <div class="input-group mb-3 fields end-date">
+                                                <input class="datepicker form-control" placeholder="dd/mm/yyy"  aria-describedby="basic-addon1" />
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="button-tow row">
+                            <div class="col-md-6 radio-box">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                    <label class="form-check-label" for="flexRadioDefault1">
+                                        Modify return flight
+                                    </label>
+                                    </div>
+                            </div>
+                            <div class="col-md-6 button-box">
+                                <input class="submit-btn" type="submit" value="Search">
+                            </div>
+                        </div>
+                    </form>
+
+                </div>
+                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+                <form>
+                    <div class="row label-head">
+                        <div class="col"><label>Check your itinerary and e-ticket</label></div>
+                        
+                    </div>
+                    <div class="row my-reserv-form-row">
+                        
+                                <div class="col-md-5 fields">
+                                    <div class="form-floating mb-3">
+                                        <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com">
+                                        <label for="floatingInput">Record Locator</label>
+                                        </div>
+                                </div>
+                                <div class="col-md-5 fields">
+                                    <div class="form-floating mb-3">
+                                        <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com">
+                                        <label for="floatingInput">Family Name(s) - as in your ID  (example: Smith)</label>
+                                        </div>
+                                </div>
+                                <div class="col-md-2 fields">
+                                    
+                                    <input class="submit-btn" type="submit" value="Submit">
+                                        
+                                </div>
+                                
+                    </div>           
+                </form>
+                </div>
+                </div>
+        </div>
+    </div>
+</section>
+    <section class="special-offer">
+        <div class="row">
+            <div class="col-md-12 heading">
+                <h4>Special Offers</h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 offer-box">
+                <a href="#">
+                    <span class="post-img"><img src="images/content-img1.jpg" alt="Content Image"></span>
+                    <span class="content">
+                        <h5>Up to 20% OFF on Domestic Flights</h5>
+                        <p>Book Now <img src="images/arrow-right.svg" alt="arrow"></p>
+                    </span>
+                </a>
+            </div>
+            <div class="col-md-4 offer-box">
+                <a href="#">
+                    <span class="post-img"><img src="images/content-img2.jpg" alt="Content Image"></span>
+                    <span class="content">
+                        <h5>Up to 20% OFF on Domestic Flights</h5>
+                        <p>Book Now <img src="images/arrow-right.svg" alt="arrow"></p>
+                    </span>
+                </a>
+            </div>
+            <div class="col-md-4 offer-box">
+                <a href="#">
+                    <span class="post-img"><img src="images/content-img3.jpg" alt="Content Image"></span>
+                    <span class="content">
+                        <h5>Up to 20% OFF on Domestic Flights</h5>
+                        <p>Book Now <img src="images/arrow-right.svg" alt="arrow"></p>
+                    </span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+</div>
+</div>
+    
+<footer>
+<div class="container-xxl">
+    <div class="top-footer">
+        <div class="row">
+            <div class="col-md-3 col-sm-6 footer-menu">
+                <h5>Important Links</h5>
+                <ul>
+                    <li><a href="/">Contact Us</a></li>
+                    <li><a href="/">About Us</a></li>
+                    <li><a href="/">Standard Protection</a></li>
+                    <li><a href="/">Gold Protection </a></li>
+                </ul>
+            </div>
+            <div class="col-md-3 col-sm-6 footer-menu social">
+                <h5>Social Media</h5>
+                <ul>
+                    <li><a href="/"><img src="images/facebook.png" alt="Facebook"> Facebook</a></li>
+                    <li><a href="/"><img src="images/linkedin.png" alt="Linkedin"> Linkedin</a></li>
+                    <li><a href="/"><img src="images/instagram.png" alt="Instagram"> Instagram</a></li>
+                </ul>
+            </div>
+            <div class="col-md-6 footer-subscription">
+                <div class="subscription-sec">
+                    <img src="images/email-icon.png" alt="subscription" class="mobile-show">
+                    <h3>Stay Inspired</h3>
+                    <p>Curated travel content to inspire future adventures. Sign up today and let travel dreams run wild.</p>
+                    <form>
+                        <input type="email" placeholder="Email" class="input" id="email" name="emailsubscription">
+                        <input type="submit" value="submit">
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="bottom-footer">
+        <div class="row">
+            <div class="col-md-6 copyright">
+                <p>© 2023, Militaryfares.com ™, all rights reserved</p>
+            </div>
+            <div class="col-md-6 other-links">
+                <ul>
+                    <li><a href="/">Terms & Conditions</a></li>
+                    <li><a href="/">Privacy Policy</a></li>
+                    <li><a href="/">California Privacy Policy</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+</footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.1/js/bootstrap-datepicker.js'></script>
+    <script src="js/bootstrap.bundle.min.js" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js"></script>
+
+    
+<script>
+$(document).ready(function(){
+  $('.datepicker').datepicker({
+            uiLibrary: 'bootstrap4'
+        });
+  var incrementPlus;
+var incrementMinus;
+var buttonPlus  = $(".increase-btn");
+var buttonMinus = $(".decrease-btn");
+var incrementPlus = buttonPlus.click(function() {
+	var $n = $(this)
+		.parent(".counter-add-item")
+		.find(".count");
+	$n.val(Number($n.val())+1 );
+});
+var incrementMinus = buttonMinus.click(function() {
+		var $n = $(this)
+		.parent(".counter-add-item")
+		.find(".count");
+	var amount = Number($n.val());
+	if (amount > 0) {
+		$n.val(amount-1);
+	}
+});
+  $(".passenger-dropdown").click(function(){
+    $(".list-dropdown-passengers").toggleClass('is-active');
+  });
+}); 
+
+$(function() {
+    $('a[href*=\\#]:not([href=\\#])').on('click', function() {
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.substr(1) +']');
+        if (target.length) {
+            $('html,body').animate({
+                scrollTop: target.offset().top
+            }, 1000);
+            return false;
+        }
+    });
+});
+
+function modifyOffset() {
+  var el, newPoint, newPlace, offset, siblings, k;
+  width    = this.offsetWidth;
+  newPoint = (this.value - this.getAttribute("min")) / (this.getAttribute("max") - this.getAttribute("min"));
+  offset   = -1;
+  if (newPoint < 0) { newPlace = 0;  }
+  else if (newPoint > 1) { newPlace = width; }
+  else { newPlace = width * newPoint + offset; offset -= newPoint;}
+  siblings = this.parentNode.childNodes;
+  for (var i = 0; i < siblings.length; i++) {
+    sibling = siblings[i];
+    if (sibling.id == this.id) { k = true; }
+    if ((k == true) && (sibling.nodeName == "OUTPUT")) {
+      outputTag = sibling;
+    }
+  }
+  outputTag.style.left       = newPlace + "px";
+  outputTag.style.marginLeft = offset + "%";
+  outputTag.innerHTML        = this.value;
+}
+
+function modifyInputs() {    
+  var inputs = document.getElementsByTagName("input");
+  for (var i = 0; i < inputs.length; i++) {
+    if (inputs[i].getAttribute("type") == "range") {
+      inputs[i].onchange = modifyOffset;
+
+      // the following taken from http://stackoverflow.com/questions/2856513/trigger-onchange-event-manually
+      if ("fireEvent" in inputs[i]) {
+          inputs[i].fireEvent("onchange");
+      } else {
+          var evt = document.createEvent("HTMLEvents");
+          evt.initEvent("change", false, true);
+          inputs[i].dispatchEvent(evt);
+      }
+    }
+  }
+}
+
+modifyInputs();
+// In your Javascript (external .js resource or <script> tag)
+  $(document).ready(function() {
+    $('.js-example-basic-single').select2();
+});
+</script>
+
+
+</body>
+
+</body>
+</html>
