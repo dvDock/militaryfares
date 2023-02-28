@@ -9,10 +9,10 @@
     <link rel="icon" type="image/png" href="images/favicon.png">
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
     <link rel="apple-touch-icon" href="images/favicon-32x32.png" >
-    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.1/css/bootstrap-datepicker.css'>
+   
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
     <link href="css/style.css" rel="stylesheet" >
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/css/select2.min.css" rel="stylesheet"/>
+    
 </head>
 <body>
 <header>
@@ -51,236 +51,171 @@
     </div>
 </div>
 </header>
+
 <div class="main-body">
 <div class="container-xxl">
     <div class="main-page-heading">
         <div class="row">
             <div class="col-md-12 text-left">
-                <h1>Book A Flight</h1>
+                <h1>Flight Details</h1>
             </div>
         </div>
+    </div>
+
+<div class="flight-details">
+<div class="top-row">
+    <div class="row">
+        <div class="col-md-7 round-trip"><h4>Round Trip <span>Thursday, February 16, 2023 - Tuesday, February 28, 2023</span></h4></div>
+        <div class="col-md-5 free-cancellation text-right"><span><img src="images/time-icon-green.png" alt=""> cancellation within 24 hours of booking!</span></div>
+    </div>
+</div>
+<div class="flight-list">
+    <div class="list-row row">
+        <div class="col flight-name"><img src="images/flight-company-logo.png" alt=""> FRA</div>
+        <div class="Departure col departure-time text-center">Departure <span class="time">10:00 am</span> Feb 16</div>
+        <div class="stop col stops text-center"><img src="images/stop-icon.png" alt=""> 1 stop</div>
+        <div class="col location text-center"><img src="images/plan-icon.png" alt=""> LAX</div>
+        <div class="arival col arrival-date text-center">Arrival <span class="time">5:00 pm</span> Feb 16</div>
+        <div class="col arrival-time text-center"><img src="images/clock-gray.png" alt=""> 7h 00m</div>
+        <div class="col more-detail text-right"><a href="#">Details <img src="images/add-icon.png" alt=""></a></div>
     </div>
     
-    <section class="riservation-sec">
-        <div class="row">
-            <div class="col-md-12">
-                <ul class="nav form-menu mb-3" id="pills-tab" role="tablist">
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="#a1a8b3" width="20" height="20"><path d="M192 93.7C192 59.5 221 0 256 0c36 0 64 59.5 64 93.7l0 66.3L497.8 278.5c8.9 5.9 14.2 15.9 14.2 26.6v56.7c0 10.9-10.7 18.6-21.1 15.2L320 320v80l57.6 43.2c4 3 6.4 7.8 6.4 12.8v42c0 7.8-6.3 14-14 14c-1.3 0-2.6-.2-3.9-.5L256 480 145.9 511.5c-1.3 .4-2.6 .5-3.9 .5c-7.8 0-14-6.3-14-14V456c0-5 2.4-9.8 6.4-12.8L192 400V320L21.1 377C10.7 380.4 0 372.7 0 361.8V305.1c0-10.7 5.3-20.7 14.2-26.6L192 160V93.7z"/></svg> Flight</button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" fill="#a1a8b3" width="20" height="20"><path d="M192 0c-41.8 0-77.4 26.7-90.5 64H64C28.7 64 0 92.7 0 128V448c0 35.3 28.7 64 64 64H320c35.3 0 64-28.7 64-64V128c0-35.3-28.7-64-64-64H282.5C269.4 26.7 233.8 0 192 0zm0 64a32 32 0 1 1 0 64 32 32 0 1 1 0-64zM72 272a24 24 0 1 1 48 0 24 24 0 1 1 -48 0zm104-16H304c8.8 0 16 7.2 16 16s-7.2 16-16 16H176c-8.8 0-16-7.2-16-16s7.2-16 16-16zM72 368a24 24 0 1 1 48 0 24 24 0 1 1 -48 0zm88 0c0-8.8 7.2-16 16-16H304c8.8 0 16 7.2 16 16s-7.2 16-16 16H176c-8.8 0-16-7.2-16-16z"/></svg> My Reservation</button>
-                    </li>
-                    
-                </ul>
-                <div class="tab-content" id="pills-tabContent">
-                <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
-                    <form>
-                        <div class="form-top-row row">
-                            <div class="col-md-6 left">
-                                <ul>
-                                    <li class="active"><a href="#">Round Trip</a></li>
-                                    <li><a href="#">One Way</a></li>
-                                    <li><a href="#">Multi City</a></li>
-                                </ul>
-                            </div>
-                            <div class="col-md-6 right">
-                                <ul>
-                                    <li class="trip mobile-show"><select class="form-select form-select-sm" aria-label=".form-select-sm example">
-                                        <option value="1" selected>Round Trip</option>
-                                        <option value="2">One Way</option>
-                                        <option value="3">Multi City</option>
-                                        </select></li>
-                                    <li class="traveller"><div class="form-group form-group-lg">
-                                        <div class="input-group select-option passenger-dropdown">
-                                          <input type="text" readonly class="form-control" placeholder="2 adults" aria-describedby="basic-addon1">
-                                        </div>
-                                        <ul class="list-dropdown-passengers">
-                                          <li>
-                                            <ul class="list-persons-count">
-                                              <li>
-                                                <span>Adults:</span>
-                                                
-                                                <div class="counter-add-item ">
-                                                  <a class="decrease-btn" href="javascript:;">-</a>
-                                                  <input type="text" value="0" class="count">
-                                                  <a class="increase-btn" href="javascript:;">+</a>
-                                                </div><!-- .counter-add-item end -->
-                                              </li>
-                                              <li>
-                                                <span>Childs:</span>
-                                                <div class="counter-add-item">
-                                                  <a class="decrease-btn" href="javascript:;">-</a>
-                                                  <input type="text" value="0" class="count">
-                                                  <a class="increase-btn" href="javascript:;">+</a>
-                                                </div><!-- .counter-add-item end -->
-                                              </li>
-                                              <li>
-                                                <span>Infants:</span>
-                                                <div class="counter-add-item">
-                                                  <a class="decrease-btn" href="javascript:;">-</a>
-                                                  <input type="text" value="0" class="count">
-                                                  <a class="increase-btn" href="javascript:;">+</a>
-                                                </div><!-- .counter-add-item end -->
-                                              </li>
-                                              
-                                           
-                                            </ul><!-- .list-persons-count end -->
-                                          </li>
-                                         
-                                         
-                                       
-                                        </ul>
-                                      
-                                        
-                                      </div></li>
-                                      <li class="economy"><select class="form-select form-select-sm" aria-label=".form-select-sm example">
-                                        <option value="1" selected>Economy</option>
-                                        <option value="2">Premium Economy</option>
-                                        <option value="3">Business</option>
-                                        <option value="4">First Class</option>
-                                        </select></li>
-                            </ul>
-                        </div>
-                        </div>
-                        <div class="row main-form-row">
-                            <div class="col-md-12">
-                                <div id="myTabContent" class="row">
-                                    <div class="col-md-4 d-block justify-content-between tab-col">
-                                        <div class="form-group form-group-lg">
-                                          <div class="input-group mb-3 fields loaction">
-                                            
-                                            <select class="js-example-basic-single form-control" name="state">
-                                              <option value="AL">Srinagar</option>
-                                              <option value="AL">Kerela</option>
-                                              <option value="AL">Goa</option>
-                                              <option value="WY">Nainital</option>
-                                            </select>
-                                          </div>
-                                          
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4 d-block justify-content-between tab-col">
-                                        <div class="form-group form-group-lg">
-                                        
-                                        <div class="input-group mb-3 fields loaction to">
-                                        
-                                        <select class="js-example-basic-single form-control" name="state">
-                                            <option value="AL">Srinagar</option>
-                                            <option value="AL">Kerela</option>
-                                            <option value="AL">Goa</option>
-                                            <option value="WY">Nainital</option>
-                                        </select>
-                                        
-                                        </div>
-                                        
-                                        </div>
-                                    </div>
-                                    <div class="col-md-2 col-sm-6 col-6 d-block justify-content-between departure tab-col">
-                                        <div class="form-group form-group-lg pr-sm-1">
-                                            <div class="input-group mb-3 fields start-date">
-                                            <input class="datepicker form-control"  placeholder="dd/mm/yyy"  aria-describedby="basic-addon1" />                                         
-                                            </div>
-                                            
-                                        </div>
-                                    </div>
-                                        <div class="col-md-2 col-sm-6 col-6 d-block justify-content-between departure tab-col">
-                                            <div class="form-group form-group-lg pl-sm-1">
-                                                <div class="input-group mb-3 fields end-date">
-                                                <input class="datepicker form-control" placeholder="dd/mm/yyy"  aria-describedby="basic-addon1" />
-                                                </div>
-                                                
-                                            </div>
-                                        </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="button-tow row">
-                            <div class="col-md-6 radio-box">
-                                <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                                    <label class="form-check-label" for="flexRadioDefault1">
-                                        Modify return flight
-                                    </label>
-                                    </div>
-                            </div>
-                            <div class="col-md-6 button-box">
-                                <input class="submit-btn" type="submit" value="Search">
-                            </div>
-                        </div>
-                    </form>
 
-                </div>
-                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
-                <form>
-                    <div class="row label-head">
-                        <div class="col"><label>Check your itinerary and e-ticket</label></div>
-                        
-                    </div>
-                    <div class="row my-reserv-form-row">
-                        
-                                <div class="col-md-5 fields">
-                                    <div class="form-floating mb-3">
-                                        <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com">
-                                        <label for="floatingInput">Record Locator</label>
-                                        </div>
-                                </div>
-                                <div class="col-md-5 fields">
-                                    <div class="form-floating mb-3">
-                                        <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com">
-                                        <label for="floatingInput">Family Name(s) - as in your ID  (example: Smith)</label>
-                                        </div>
-                                </div>
-                                <div class="col-md-2 fields">
-                                    
-                                    <input class="submit-btn" type="submit" value="Submit">
-                                        
-                                </div>
-                                
-                    </div>           
-                </form>
-                </div>
-                </div>
+</div>
+<div class="bottom-row">
+    <div class="row">
+        <div class="col-md-6 total-fairs">Total Airfare: US$ 578.57 Per Person</div>
+        <div class="col-md-6 ">
+            <ul>
+                <li>Passenger: <span>1</span></li>
+                <li>Cabin Class: <span>Economy</span></li>
+            </ul>
         </div>
     </div>
-</section>
-    <section class="special-offer">
-        <div class="row">
-            <div class="col-md-12 heading">
-                <h4>Special Offers</h4>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-4 offer-box">
-                <a href="#">
-                    <span class="post-img"><img src="images/content-img1.jpg" alt="Content Image"></span>
-                    <span class="content">
-                        <h5>Up to 20% OFF on Domestic Flights</h5>
-                        <p>Book Now <img src="images/arrow-right.svg" alt="arrow"></p>
-                    </span>
-                </a>
-            </div>
-            <div class="col-md-4 offer-box">
-                <a href="#">
-                    <span class="post-img"><img src="images/content-img2.jpg" alt="Content Image"></span>
-                    <span class="content">
-                        <h5>Up to 20% OFF on Domestic Flights</h5>
-                        <p>Book Now <img src="images/arrow-right.svg" alt="arrow"></p>
-                    </span>
-                </a>
-            </div>
-            <div class="col-md-4 offer-box">
-                <a href="#">
-                    <span class="post-img"><img src="images/content-img3.jpg" alt="Content Image"></span>
-                    <span class="content">
-                        <h5>Up to 20% OFF on Domestic Flights</h5>
-                        <p>Book Now <img src="images/arrow-right.svg" alt="arrow"></p>
-                    </span>
-                </a>
-            </div>
-        </div>
-    </section>
+</div>
 
+</div>
+
+<div class="payment-process">
+    <div class="payment-nav row">
+        <div class="col"><div class="tab-item active">Passenger Details</div></div>
+        <div class="col"><div class="tab-item">Additional Services</div></div>
+        <div class="col"><div class="tab-item">Payment</div></div>
+    </div>
+    <div class="personal-detail-form">
+        <form class="row g-3 needs-validation" novalidate>
+            <div class="row">
+                <div class="col required-row input-field">*All form fields are required.</div>
+            </div>
+            <div class="row">
+                <div class="col adult input-field">
+                    <h3>Adult</h3>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                        <label class="form-check-label" for="exampleRadios1">Male</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                        <label class="form-check-label" for="exampleRadios2">Female</label>
+                    </div>                          
+                </div>
+            </div>
+            <div class="basic-details">
+                <div class="row">
+                    <div class="col-md-12"><h5 class="uppercase">Basic Details</h5></div>
+                    <div class="col-md-6 input-field">
+                        <label>First name(s) as in your ID*</label>
+                        <input type="text" class="input form-control" placeholder="-" id="first-name" required>
+                    </div>
+                    <div class="col-md-6 input-field">
+                        <label>Family name(s) as in your ID*</label>
+                        <input type="text" class="input" placeholder="-" id="first-name" required>
+                    </div>
+                    <div class="col-md-6 input-field">
+                        <div class="row">
+                            <div class="col-md-12"><label>Date of birth*</label></div>
+                            <div class="col-sm-4"><input class="input form-control" type="text" placeholder="Month" id="month" required></div>
+                            <div class="col-sm-4"><input class="input form-control" type="text" placeholder="Day" id="day" required></div>
+                            <div class="col-sm-4"><input class="input form-control" type="text" placeholder="Year" id="year" required></div>
+                        </div>
+                        
+                        
+                    </div>
+                    <div class="col-md-6 input-field">
+                        <label>Nationality*</label>
+                        <input type="text" class="input form-control" placeholder="-" required>
+                    </div>
+                    <div class="col-md-6 input-field">
+                        <label>Passport number</label> 
+                        <input type="number" class="input form-control" placeholder="" required>
+                    </div>
+                    <div class="col-md-6 input-field">
+                    
+                        <div class="row">
+                            <div class="col-md-12"> <label>Passport expiry date</label></div>
+                            <div class="col-sm-4"><select class="input form-control">
+                                <option>Month</option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                                <option>6</option>
+                                <option>7</option>
+                                <option>8</option>
+                                <option>8</option>
+                                <option>10</option>
+                                <option>11</option>
+                                <option>12</option>
+                            </select>
+                            </div>
+                            <div class="col-sm-4"><input class="input form-control" type="text" placeholder="Day" required></div>
+                            <div class="col-sm-4"><input class="input form-control" type="text" placeholder="Year" required></div>
+                        </div>
+                        
+                    </div>
+                    <div class="col-md-12 input-field">
+                        <label>Frequent flyer program</label>
+                        <input type="text" class="input form-control" placeholder="" required>
+                    </div>                
+                </div>
+                <div class="row">
+                    <div class="col-md-12"><h5 class="uppercase">Contact Details</h5></div>
+                    <div class="col-md-6 input-field">
+                        <label>Email*</label>
+                        <input type="email" class="input form-control" placeholder="" required>
+                    </div>
+                    <div class="col-md-6 input-field">
+                        <label>Confirm Email*</label>
+                        <input type="email" class="input form-control" placeholder="" required>
+                    </div>
+                    <div class="col-md-6 input-field">
+                        <label>Country Code*</label>
+                        <input type="number" class="input form-control" placeholder="" required>
+                    </div>
+                    <div class="col-md-6 input-field">
+                        <label>Phone Number*</label>
+                        <input type="number" class="input form-control" placeholder="" required>
+                    </div>
+                </div>
+                <div class="row total-result">
+                    <div class="col">
+                        <h3>Total to pay</h3>
+                        <div class="total-price">US$ 578.57</div>
+                        <p>Final price - no extra fees for card payments!</p>
+                        <p><span>Does not include bank fees your bank may apply for foreign transactions. Please contact your bank directly for inquiries.</span></p>
+                        <input type="submit" class="btn btn-primary" value="Submit">
+                    </div>
+                </div>
+
+            </div>
+        </form>
+    </div>
+      
+
+</div>   
+    
+    
 </div>
 </div>
     
@@ -335,98 +270,29 @@
     </div>
 </div>
 </footer>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.1/js/bootstrap-datepicker.js'></script>
     <script src="js/bootstrap.bundle.min.js" ></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js"></script>
+    
 
     
 <script>
-$(document).ready(function(){
-  $('.datepicker').datepicker({
-            uiLibrary: 'bootstrap4'
-        });
-  var incrementPlus;
-var incrementMinus;
-var buttonPlus  = $(".increase-btn");
-var buttonMinus = $(".decrease-btn");
-var incrementPlus = buttonPlus.click(function() {
-	var $n = $(this)
-		.parent(".counter-add-item")
-		.find(".count");
-	$n.val(Number($n.val())+1 );
-});
-var incrementMinus = buttonMinus.click(function() {
-		var $n = $(this)
-		.parent(".counter-add-item")
-		.find(".count");
-	var amount = Number($n.val());
-	if (amount > 0) {
-		$n.val(amount-1);
-	}
-});
-  $(".passenger-dropdown").click(function(){
-    $(".list-dropdown-passengers").toggleClass('is-active');
-  });
-}); 
+(() => {
+  'use strict'
 
-$(function() {
-    $('a[href*=\\#]:not([href=\\#])').on('click', function() {
-        var target = $(this.hash);
-        target = target.length ? target : $('[name=' + this.hash.substr(1) +']');
-        if (target.length) {
-            $('html,body').animate({
-                scrollTop: target.offset().top
-            }, 1000);
-            return false;
-        }
-    });
-});
+  // Fetch all the forms we want to apply custom Bootstrap validation styles to
+  const forms = document.querySelectorAll('.needs-validation')
 
-function modifyOffset() {
-  var el, newPoint, newPlace, offset, siblings, k;
-  width    = this.offsetWidth;
-  newPoint = (this.value - this.getAttribute("min")) / (this.getAttribute("max") - this.getAttribute("min"));
-  offset   = -1;
-  if (newPoint < 0) { newPlace = 0;  }
-  else if (newPoint > 1) { newPlace = width; }
-  else { newPlace = width * newPoint + offset; offset -= newPoint;}
-  siblings = this.parentNode.childNodes;
-  for (var i = 0; i < siblings.length; i++) {
-    sibling = siblings[i];
-    if (sibling.id == this.id) { k = true; }
-    if ((k == true) && (sibling.nodeName == "OUTPUT")) {
-      outputTag = sibling;
-    }
-  }
-  outputTag.style.left       = newPlace + "px";
-  outputTag.style.marginLeft = offset + "%";
-  outputTag.innerHTML        = this.value;
-}
-
-function modifyInputs() {    
-  var inputs = document.getElementsByTagName("input");
-  for (var i = 0; i < inputs.length; i++) {
-    if (inputs[i].getAttribute("type") == "range") {
-      inputs[i].onchange = modifyOffset;
-
-      // the following taken from http://stackoverflow.com/questions/2856513/trigger-onchange-event-manually
-      if ("fireEvent" in inputs[i]) {
-          inputs[i].fireEvent("onchange");
-      } else {
-          var evt = document.createEvent("HTMLEvents");
-          evt.initEvent("change", false, true);
-          inputs[i].dispatchEvent(evt);
+  // Loop over them and prevent submission
+  Array.from(forms).forEach(form => {
+    form.addEventListener('submit', event => {
+      if (!form.checkValidity()) {
+        event.preventDefault()
+        event.stopPropagation()
       }
-    }
-  }
-}
 
-modifyInputs();
-// In your Javascript (external .js resource or <script> tag)
-  $(document).ready(function() {
-    $('.js-example-basic-single').select2();
-});
+      form.classList.add('was-validated')
+    }, false)
+  })
+})()
 </script>
 
 
