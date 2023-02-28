@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Cheap airline tickets. Only here you'll get the cheapest airline ticket deals available. We search all airlines for cheap flights and show you  the most discounted airfares. Get your cheapest ticket here - with price guarantee!" />
     <meta name="keywords" content="discount airfares, cheap flights, discount flights" />
-    <title>Flight Details | MilitaryFares</title>
+    <title>Flight Details: Additional Services | MilitaryFares</title>
     <link rel="icon" type="image/png" href="images/favicon.png">
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
     <link rel="apple-touch-icon" href="images/favicon-32x32.png" >
@@ -110,106 +110,117 @@
 
 <div class="payment-process">
     <div class="payment-nav row">
-        <div class="col"><div class="tab-item active">Passenger Details</div></div>
-        <div class="col"><div class="tab-item">Additional Services</div></div>
+        <div class="col"><div class="tab-item">Passenger Details</div></div>
+        <div class="col"><div class="tab-item active">Additional Services</div></div>
         <div class="col"><div class="tab-item">Payment</div></div>
     </div>
     <div class="personal-detail-form">
         <form class="row g-3 needs-validation" novalidate>
-            <div class="row">
-                <div class="col required-row input-field">*All form fields are required.</div>
-            </div>
-            <div class="row">
-                <div class="col adult input-field">
-                    <h3><img src="images/gender-icon.png" alt="Adult"> <span>Adult</span></h3>
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-                        <label class="form-check-label" for="exampleRadios1">Male</label>
+            
+            
+            <div class="basic-details additional-services">
+                <div class="row mb-4 cancellation-protection">
+                    <div class="col-md-12 mb-3">
+                        <h2>Cancellation Protection</h2>
                     </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-                        <label class="form-check-label" for="exampleRadios2">Female</label>
-                    </div>                          
-                </div>
-            </div>
-            <div class="basic-details">
-                <div class="row">
-                    <div class="col-md-12"><h5 class="uppercase">Basic Details</h5></div>
-                    <div class="col-md-6 input-field">
-                        <label>First name(s) as in your ID*</label>
-                        <input type="text" class="input form-control" placeholder="-" id="first-name" required>
-                    </div>
-                    <div class="col-md-6 input-field">
-                        <label>Family name(s) as in your ID*</label>
-                        <input type="text" class="input" placeholder="-" id="first-name" required>
-                    </div>
-                    <div class="col-md-6 input-field">
-                        <div class="row">
-                            <div class="col-md-12"><label>Date of birth*</label></div>
-                            <div class="col-sm-4"><input class="input form-control" type="text" placeholder="Month" id="month" required></div>
-                            <div class="col-sm-4"><input class="input form-control" type="text" placeholder="Day" id="day" required></div>
-                            <div class="col-sm-4"><input class="input form-control" type="text" placeholder="Year" id="year" required></div>
+                    <div class="col">
+                        <div class="items light-gray bg-gray">
+                           <h3>No Cancellation Protection</h3>
+                           <p>If you don't want any cancellation
+                            protection</p>
+                            <input type="submit" class="btn-gray" value="Select">
                         </div>
-                        
-                        
+                     </div>
+                    <div class="col">
+                        <div class="items blue bg-blue">
+                           <h3>Standard</h3>
+                          <p>You may cancel if you are ill or
+                            due to death in your family.</p>
+                            <h4>US $49.00 <span>Per Person</span></h4>
+                         <input type="submit" class="btn-blue" value="Add">
+                         </div>
                     </div>
-                    <div class="col-md-6 input-field">
-                        <label>Nationality*</label>
-                        <input type="text" class="input form-control" placeholder="-" required>
-                    </div>
-                    <div class="col-md-6 input-field">
-                        <label>Passport number</label> 
-                        <input type="number" class="input form-control" placeholder="" required>
-                    </div>
-                    <div class="col-md-6 input-field">
-                    
-                        <div class="row">
-                            <div class="col-md-12"> <label>Passport expiry date</label></div>
-                            <div class="col-sm-4"><select required class="input form-control">
-                                <option>Month</option>
-                                <option>1</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4</option>
-                                <option>5</option>
-                                <option>6</option>
-                                <option>7</option>
-                                <option>8</option>
-                                <option>8</option>
-                                <option>10</option>
-                                <option>11</option>
-                                <option>12</option>
-                            </select>
-                            </div>
-                            <div class="col-sm-4"><input class="input form-control" type="text" placeholder="Day" required></div>
-                            <div class="col-sm-4"><input class="input form-control" type="text" placeholder="Year" required></div>
+                    <div class="col">
+                        <div class="items gold bg-gold">
+                             <h3>Gold</h3>
+                            <p>You can cancel for whatever
+                            reason - no questions asked!</p>
+                            <h4>US $105.00 <span>Per Person</span></h4>
+                         <input type="submit" class="btn-gold" value="Add">
                         </div>
-                        
-                    </div>
-                    <div class="col-md-12 input-field">
-                        <label>Frequent flyer program</label>
-                        <input type="text" class="input form-control" placeholder="" required>
-                    </div>                
-                </div>
-                <div class="row">
-                    <div class="col-md-12"><h5 class="uppercase">Contact Details</h5></div>
-                    <div class="col-md-6 input-field">
-                        <label>Email*</label>
-                        <input type="email" class="input form-control" placeholder="" required>
-                    </div>
-                    <div class="col-md-6 input-field">
-                        <label>Confirm Email*</label>
-                        <input type="email" class="input form-control" placeholder="" required>
-                    </div>
-                    <div class="col-md-6 input-field">
-                        <label>Country Code*</label>
-                        <input type="number" class="input form-control" placeholder="" required>
-                    </div>
-                    <div class="col-md-6 input-field">
-                        <label>Phone Number*</label>
-                        <input type="number" class="input form-control" placeholder="" required>
                     </div>
                 </div>
+                <div class="row missed-connection mb-4">
+                    <div class="col-md-12 mb-3">
+                        <h2>Missed Connection</h2>
+                    </div>
+                    <div class="col">
+                      <div class="missed-connection-items bg-gray">
+                            <h3>No!</h3>
+                        <p>If you don't want any missed cancellation protection.</p>
+                        <h4>US $00.00 <span>Per Person</span></h4>
+                        <input type="submit" class="btn-gray" value="Select">
+                      </div>
+                    </div>
+                    <div class="col">
+                     <div class="missed-connection-items bg-gray">
+                        <h3>Yes!</h3>
+                    <p>If you miss your connecting, flight just book the next one.
+                        With this protection plan you are 100% covered.</p>
+                    <h4>US $56.00 <span>Per Person</span></h4>
+                    <input type="submit" class="btn-gray" value="Add">
+
+                  </div>
+                </div>
+                </div>
+                <div class="row support-level">
+                    <div class="col-md-12 mb-3">
+                        <h2>Support Level</h2>
+                    </div>
+                    <div class="col">
+                        <div class="support-level-items bg-gray">
+                            <h3>Basic</h3>
+                            <ul>
+                                <li>Expert Travel Agent Support <span>Priority: Basic</span></li>
+                                <li>Date Change Fee/ Cancellation
+                                    Fee <span>US$ 70</span></li>
+                                <li>Involuntary Change Assistance
+                                    Fee<span>US$ 22</span></li>
+                                    <li>US $-.--<span>Per Person</span>
+                                        <input type="submit" class="btn-gray" value="Add"></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="support-level-items blue bg-blue">
+                        <h3>Premium</h3>
+                        <ul>
+                            <li>Fast Expert Travel Agent Support<span>Priority: Fast Track Service</span></li>
+                            <li>Reduced Date Changes Fee<span>US$ 22</span></li>
+                            <li>Reduced Cancellation Fee<span>US$ 22</span></li>
+                            <li>Free Involuntary Changes
+                                Assistance Fee<span>Free</span></li>
+                                <li>US $14.00<span>Per Person</span>
+                                    <input type="submit" class="btn-blue" value="Add"></li>
+                        </ul>
+                    </div>
+                </div>
+                    <div class="col">
+                        <div class="support-level-items green bg-green">
+                        <h3>Platinum</h3>
+                        <ul>
+                            <li>Extra Fast Expert Travel Agent
+                                Support<span>Priority: Extra Fast Track Service</span></li>
+                            <li>No Date Change Fee<span>Free</span></li>
+                            <li>No Cancellation Fee<span>Free</span></li>
+                            
+                                <li>US $49.00<span>Per Person</span>
+                                    <input type="submit" class="btn-green" value="Add"></li>
+                        </ul>
+
+                    </div></div>
+                </div>
+
                 <div class="row total-result">
                     <div class="col">
                         <h3>Total to pay</h3>

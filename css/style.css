@@ -58,9 +58,23 @@ select.input{ width: 100%; border: 1px solid #d2d8df; border-radius: 5px; paddin
 select.input{ background-image:url(../images/down-arrow.svg); background-position: 90% center; background-repeat: no-repeat; }
 .input-field{ padding-bottom: 25px; }
 
-/**** Global button Primary *********/
+/**** Global buttons *********/
 .btn-primary{  padding: 15px 50px; color:white; background: #004aad; cursor: pointer; border:1px solid #004aad; font-weight: bold; font-size: 19px; border-radius:4px; transition: all 0.3s ease-in-out; line-height: normal; }
 .btn-primary:hover{ background: white; color: #004aad; }
+
+.btn-gray{  padding: 10px 25px; color:white; background: #525d60; cursor: pointer; border:1px solid #525d60; font-weight: bold; font-size: 18px; border-radius:4px; transition: all 0.3s ease-in-out; line-height: normal; }
+.btn-gray:hover{ background: white; color: #525d60; }
+
+.btn-blue{  padding: 10px 25px; color:white; background: #004aad; cursor: pointer; border:1px solid #004aad; font-weight: bold; font-size: 18px; border-radius:4px; transition: all 0.3s ease-in-out; line-height: normal; }
+.btn-blue:hover{ background: white; color: #004aad; }
+
+.btn-gold{  padding: 10px 25px; color:white; background: #d1b238; cursor: pointer; border:1px solid #d1b238; font-weight: bold; font-size: 18px; border-radius:4px; transition: all 0.3s ease-in-out; line-height: normal; }
+.btn-gold:hover{ background: white; color: #d1b238; }
+
+.btn-green{  padding: 10px 25px; color:white; background: #38af8f; cursor: pointer; border:1px solid #38af8f; font-weight: bold; font-size: 18px; border-radius:2px; transition: all 0.3s ease-in-out; line-height: normal; }
+.btn-green:hover{ background: white; color: #38af8f; }
+
+
 
 /*** header css here ******/
 header{ background: white; padding:20px 0px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.15); position: relative; z-index: 100; }
@@ -206,7 +220,7 @@ footer .bottom-footer .other-links ul li a:hover{ text-decoration: underline; }
 select{ -webkit-appearance: none; appearance: none; }
 .input-group > .form-control:focus { z-index: 0; }
 .select-option::after { content: ""; position: absolute; right: 15px; top: 7px;	bottom: 0; z-index: 0; pointer-events: none; background: url('../images/down-arrow.svg') center no-repeat; height: 20px; width: 20px; }
-.form-control:focus{ box-shadow: none; }
+/*.form-control:focus{ box-shadow: none; }*/
 .form-control:focus-visible{ border: none; outline: none; }
 .ranger output {  position: absolute;background:#fff;width: 40px; height: 30px; text-align: center; color: #000; border-radius: 10px; display: inline-block; font: bold 15px/30px Georgia; bottom: 175%; left: 0; }
 .ranger output:after { content: ""; position: absolute;  width: 0;height: 0; border-top: 10px solid #fff; border-left: 5px solid transparent; border-right: 5px solid transparent;top: 100%; left: 50%; margin-left: -5px; margin-top: -1px; }
@@ -296,6 +310,31 @@ body .select2-container--default .select2-selection--single .select2-selection__
 .total-result p span{ color: #8c98ac; font-size: 14px; }
 .total-result .total-price{ font-size: 55px; color: #1d2025; font-weight: bold; line-height: normal; }
 .total-result .btn{ margin-top: 25px; }
+
+
+.additional-services{ max-width: 1050px; margin: 0 auto; }
+.additional-services h2{ font-size: 24px; font-weight: 500; color: #1d2025; line-height: 31px; }
+.additional-services h3{ font-size: 26px; font-weight: bold; }
+.additional-services h4{ font-size: 23px; font-weight: bold; }
+
+.light-gray h3,
+.light-gray h4{ color:#74868b ; }
+.blue h3,
+.blue h4{ color:#004aad; }
+.gold h3,
+.gold h4{ color: #ac8900; }
+.green h3,
+.green h4{ color:#38af8f ; }
+
+.bg-gray{ background-color:#f3f8fa ; }
+.bg-blue{ background-color:#e7f1ff ; }
+.bg-gold{ background-color:#fff3e4 ; }
+.bg-green{ background-color:#e1fbf4; }
+.additional-services .items,
+.additional-services .missed-connection-items,
+.additional-services .support-level-items{ padding: 16px 20px; position:relative; min-height: 100%; border-radius: 4px; }
+
+.additional-services h4 span{ font-size: 15px; font-weight: 500; color: #99a7ac; }
 
 /******** Mobile responsive css here **********/
 @media only screen and (min-width: 768px) {
