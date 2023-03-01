@@ -198,8 +198,17 @@ footer .bottom-footer .other-links ul li{ display: inline-block; vertical-align:
 footer .bottom-footer .other-links ul li a{ color: #004aad; }
 footer .bottom-footer .other-links ul li a:hover{ text-decoration: underline; }
 
+/********** Listing page css *****/
+.result-details{ box-shadow: 0 3px 6px rgba(0, 74, 173, 0.10);	background: white; border-radius: 5px; padding:10px 50px; margin-bottom:50px; }
+.result-details .list-row{ padding-top:10px; padding-bottom: 10px; border-bottom:1px solid #dde4ed; font-size: 17px; font-weight: normal; color: #292d30;}
+.result-details .list-row:last-child{ border-bottom: 0px;; }
+.result-details .list-row span{ font-weight: bold; padding-left: 10px; }
 
+.search-result-list{ box-shadow: 0 3px 6px rgba(0, 74, 173, 0.10);	background: white; border-radius: 5px; padding: 30px 50px; margin-bottom: 30px; }
+.search-heading{ padding-bottom:10px; }
+.search-heading h3{ font-size: 18px; font-weight: bold; color: #61666f; }
 
+.filter-col{ box-shadow: 0 3px 6px rgba(0, 74, 173, 0.10);	background: white; border-radius: 5px; padding:15px 25px; }
 
 
 /************** aditional css here *********/
