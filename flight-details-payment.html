@@ -110,117 +110,83 @@
 
 <div class="payment-process">
     <div class="payment-nav row">
-        <div class="col"><div class="tab-item active">Passenger Details</div></div>
+        <div class="col"><div class="tab-item">Passenger Details</div></div>
         <div class="col"><div class="tab-item">Additional Services</div></div>
-        <div class="col"><div class="tab-item">Payment</div></div>
+        <div class="col"><div class="tab-item active">Payment</div></div>
     </div>
-    <div class="personal-detail-form">
+    <div class="personal-detail-form payment-details">
         <form class="row g-3 needs-validation" novalidate>
             <div class="row">
-                <div class="col required-row input-field">*All form fields are required.</div>
+                <div class="col-sm-8">
+                    <div class="summery">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h4>Summery of Charges</h4>
+                            </div>
+                            <div class="col-md-6">Total Airfare:</div>
+                            <div class="col-md-6">US$ 578.57</div>
+                            <div class="col-md-6">Total:</div>
+                            <div class="col-md-6">US$ 578.57</div>
+                        </div>
+                    </div>
+
+                    <div class="payment-information">
+                        <div class="row">
+                            <div class="col"><h4>Payment Information</h4></div>
+                        </div>
+                        <div class="row">
+                            <div class="col promotional-section">
+                                <input type="text" placeholder="Promotional Code" name="promo">
+                                <input type="submit" value="Apply">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <h5>Please select payment method</h5>
+                                <p>The billing address for credit/debit cards used should match your address.</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <div class="pay-with">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">Pay with credit card</label>
+                                    </div>
+                                    <div class="visa-img">
+                                        <img src="images/visa-pay.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col terms-sec-pay">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">I agree to the <a href="#">Terms & Conditions</a>, <a href="#">Cancellation and Change Rules</a> and <a href="#">Privacy Policy</a>.
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                                    <label class="form-check-label" for="flexCheckChecked">Subscribe to our email newsletter for useful tips, valuable resources and discounts.
+                                    </label>
+                                  </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-sm-4"></div>
             </div>
             <div class="row">
-                <div class="col adult input-field">
-                    <h3><img src="images/gender-icon.png" alt="Adult"> <span>Adult</span></h3>
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-                        <label class="form-check-label" for="exampleRadios1">Male</label>
+                <div class="col-md-12">
+                    <div class="make-payment">
+                        <input type="submit" class="btn btn-primary-one" value="Make Payment">
+                        <span class="condition-text">*Does not include bank fees your bank may apply for foreign transactions. Please contact your bank directly for inquiries.</span>
                     </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-                        <label class="form-check-label" for="exampleRadios2">Female</label>
-                    </div>                          
                 </div>
             </div>
-            <div class="basic-details">
-                <div class="row">
-                    <div class="col-md-12"><h5 class="uppercase">Basic Details</h5></div>
-                    <div class="col-md-6 input-field">
-                        <label>First name(s) as in your ID*</label>
-                        <input type="text" class="input form-control" placeholder="-" id="first-name" required>
-                    </div>
-                    <div class="col-md-6 input-field">
-                        <label>Family name(s) as in your ID*</label>
-                        <input type="text" class="input" placeholder="-" id="first-name" required>
-                    </div>
-                    <div class="col-md-6 input-field">
-                        <div class="row">
-                            <div class="col-md-12"><label>Date of birth*</label></div>
-                            <div class="col-sm-4"><input class="input form-control" type="text" placeholder="Month" id="month" required></div>
-                            <div class="col-sm-4"><input class="input form-control" type="text" placeholder="Day" id="day" required></div>
-                            <div class="col-sm-4"><input class="input form-control" type="text" placeholder="Year" id="year" required></div>
-                        </div>
-                        
-                        
-                    </div>
-                    <div class="col-md-6 input-field">
-                        <label>Nationality*</label>
-                        <input type="text" class="input form-control" placeholder="-" required>
-                    </div>
-                    <div class="col-md-6 input-field">
-                        <label>Passport number</label> 
-                        <input type="number" class="input form-control" placeholder="" required>
-                    </div>
-                    <div class="col-md-6 input-field">
-                    
-                        <div class="row">
-                            <div class="col-md-12"> <label>Passport expiry date</label></div>
-                            <div class="col-sm-4"><select required class="input form-control">
-                                <option>Month</option>
-                                <option>1</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4</option>
-                                <option>5</option>
-                                <option>6</option>
-                                <option>7</option>
-                                <option>8</option>
-                                <option>8</option>
-                                <option>10</option>
-                                <option>11</option>
-                                <option>12</option>
-                            </select>
-                            </div>
-                            <div class="col-sm-4"><input class="input form-control" type="text" placeholder="Day" required></div>
-                            <div class="col-sm-4"><input class="input form-control" type="text" placeholder="Year" required></div>
-                        </div>
-                        
-                    </div>
-                    <div class="col-md-12 input-field">
-                        <label>Frequent flyer program</label>
-                        <input type="text" class="input form-control" placeholder="" required>
-                    </div>                
-                </div>
-                <div class="row">
-                    <div class="col-md-12"><h5 class="uppercase">Contact Details</h5></div>
-                    <div class="col-md-6 input-field">
-                        <label>Email*</label>
-                        <input type="email" class="input form-control" placeholder="" required>
-                    </div>
-                    <div class="col-md-6 input-field">
-                        <label>Confirm Email*</label>
-                        <input type="email" class="input form-control" placeholder="" required>
-                    </div>
-                    <div class="col-md-6 input-field">
-                        <label>Country Code*</label>
-                        <input type="number" class="input form-control" placeholder="" required>
-                    </div>
-                    <div class="col-md-6 input-field">
-                        <label>Phone Number*</label>
-                        <input type="number" class="input form-control" placeholder="" required>
-                    </div>
-                </div>
-                <div class="row total-result">
-                    <div class="col">
-                        <h3>Total to pay</h3>
-                        <div class="total-price">US$ 578.57</div>
-                        <p>Final price - no extra fees for card payments!</p>
-                        <p><span>Does not include bank fees your bank may apply for foreign transactions. Please contact your bank directly for inquiries.</span></p>
-                        <input type="submit" class="btn btn-primary" value="Submit">
-                    </div>
-                </div>
-
-            </div>
+            
         </form>
     </div>
       
