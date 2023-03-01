@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Cheap airline tickets. Only here you'll get the cheapest airline ticket deals available. We search all airlines for cheap flights and show you  the most discounted airfares. Get your cheapest ticket here - with price guarantee!" />
     <meta name="keywords" content="discount airfares, cheap flights, discount flights" />
-    <title>Flight Details | MilitaryFares</title>
+    <title>Flight Details: Additional Services | MilitaryFares</title>
     <link rel="icon" type="image/png" href="images/favicon.png">
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
     <link rel="apple-touch-icon" href="images/favicon-32x32.png" >
@@ -111,147 +111,176 @@
 <div class="payment-process">
     <div class="payment-nav row">
         <div class="col"><div class="tab-item">Passenger Details</div></div>
-        <div class="col"><div class="tab-item">Additional Services</div></div>
-        <div class="col"><div class="tab-item active">Payment</div></div>
+        <div class="col"><div class="tab-item active">Additional Services</div></div>
+        <div class="col"><div class="tab-item">Payment</div></div>
     </div>
-    <div class="personal-detail-form payment-details">
+    <div class="personal-detail-form">
         <form class="row g-3 needs-validation" novalidate>
-            <div class="row">
-                <div class="col-sm-8 flight-summery">
-                    <div class="summery">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <h4>Summery of Charges</h4>
-                            </div>
+            
+            
+            <div class="basic-details additional-services">
+                <div class="row mb-5 cancellation-protection">
+                    <div class="col-md-12 mb-2">
+                        <h2>Cancellation Protection <img src="images/more-info-icon.png" alt=""></h2>
+                    </div>
+                    <div class="col">
+                        <div class="items light-gray bg-gray">
+                           <h3>No Cancellation Protection</h3>
+                           <p>If you don't want any cancellation
+                            protection</p>
+                            <button type="button" class="btn-gray item-btn" data-bs-toggle="modal" data-bs-target="#addMoreModal" >Select</button>
                         </div>
-                        <div class="summery-content">
-                            <div class="row">
-                                <div class="col-md-5 summery-text-head">Total Airfare:</div>
-                                <div class="col-md-7 summery-text">US$ 578.57</div>
-                                <div class="col-md-5 summery-text">Total:</div>
-                                <div class="col-md-7 summery-text"><strong>US$ 578.57</strong></div>
-                            </div>
+                     </div>
+                    <div class="col">
+                        <div class="items blue bg-blue">
+                           <h3>Standard <img src="images/more-info-icon.png" alt=""></h3>
+                          <p>You may cancel if you are ill or
+                            due to death in your family.</p>
+                            <h4>US $49.00 <span>Per Person</span></h4>
+                         <button type="button" class="btn-blue item-btn" data-bs-toggle="modal" data-bs-target="#addMoreModal" >Add</button>
+                         </div>
+                    </div>
+                    <div class="col">
+                        <div class="items gold bg-gold">
+                            <div class="best-value">Best Value!</div>
+                             <h3>Gold <img src="images/more-info-icon.png" alt=""></h3>
+                            <p>You can cancel for whatever
+                            reason - no questions asked!</p>
+                            <h4>US $105.00 <span>Per Person</span></h4>
+                         <button type="button" class="btn-gold item-btn" data-bs-toggle="modal" data-bs-target="#addMoreModal" >Add</button>
                         </div>
                     </div>
+                </div>
+                <div class="row missed-connection mb-5">
+                    <div class="col-md-12 mb-2">
+                        <h2>Missed Connection <img src="images/more-info-icon.png" alt=""></h2>
+                    </div>
+                    <div class="col">
+                      <div class="missed-connection-items bg-gray">
+                            <h3>No!</h3>
+                        <p>If you don't want any missed cancellation protection.</p>
+                        <h4>US $00.00 <span>Per Person</span></h4>
+                        <button type="button" class="btn-gray item-btn" data-bs-toggle="modal" data-bs-target="#addMoreModal">Select</button>
+                      </div>
+                    </div>
+                    <div class="col">
+                     <div class="missed-connection-items bg-gray">
+                        <h3>Yes!</h3>
+                    <p>If you miss your connecting, flight just book the next one.
+                        With this protection plan you are 100% covered.</p>
+                    <h4>US $56.00 <span>Per Person</span></h4>
+                    <button type="button" class="btn-gray item-btn" data-bs-toggle="modal" data-bs-target="#addMoreModal">Add</button>
 
-                    <div class="payment-information">
-                        <div class="row">
-                            <div class="col"><h4>Payment Information</h4></div>
-                        </div>
-                        <div class="row">
-                            <div class="col promotional-section">
-                                <input type="text" placeholder="Promotional Code" name="promo">
-                                <input type="submit" value="Apply">
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col select-payment">
-                                <h5>Please select payment method</h5>
-                                <p>The billing address for credit/debit cards used should match your address.</p>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col">
-                                <div class="pay-with">
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefaultPay">
-                                        <label class="form-check-label" for="flexCheckDefaultPay">Pay with credit card</label>
-                                    </div>
-                                    <div class="visa-img">
-                                        <img src="images/visa-pay.png" alt="">
-                                    </div>
+                  </div>
+                </div>
+                </div>
+                <div class="row support-level">
+                    <div class="col-md-12 mb-2">
+                        <h2>Support Level <img src="images/more-info-icon.png" alt=""></h2>
+                    </div>
+                    <div class="col">
+                        <div class="support-level-items bg-gray">
+                            <h3>Basic</h3>
+                            <ul>
+                                <li>Expert Travel Agent Support <img src="images/more-info-icon-s.png" alt=""> <span>Priority: Basic</span></li>
+                                <li>Date Change Fee/ Cancellation
+                                    Fee <img src="images/more-info-icon-s.png" alt=""> <span>US$ 70</span></li>
+                                <li>Involuntary Change Assistance
+                                    Fee <img src="images/more-info-icon-s.png" alt=""><span>US$ 22</span></li>                                    
+                            </ul>
+                            <div class="cta-btns">                                
+                                <div class="rate-left"> US $-.--<span>Per Person</span></div>
+                                <div class="btn-box">
+                                    <button type="button" class="btn-gray" data-bs-toggle="modal" data-bs-target="#addMoreModal" >Add</button>
                                 </div>
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="col terms-sec-pay">
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                    <label class="form-check-label" for="flexCheckDefault">I agree to the <a href="#">Terms & Conditions</a>, <a href="#">Cancellation and Change Rules</a> and <a href="#">Privacy Policy</a>.
-                                    </label>
-                                  </div>
-                                  <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-                                    <label class="form-check-label" for="flexCheckChecked">Subscribe to our email newsletter for useful tips, valuable resources and discounts.
-                                    </label>
-                                  </div>
+                    </div>
+                    <div class="col">
+                        <div class="support-level-items blue bg-blue">
+                        <h3>Premium</h3>
+                        <ul>
+                            <li>Fast Expert Travel Agent Support <img src="images/more-info-icon-s.png" alt=""><span>Priority: Fast Track Service</span></li>
+                            <li>Reduced Date Changes Fee <img src="images/more-info-icon-s.png" alt=""><span>US$ 22</span></li>
+                            <li>Reduced Cancellation Fee <img src="images/more-info-icon-s.png" alt=""><span>US$ 22</span></li>
+                            <li>Free Involuntary Changes
+                                Assistance Fee <img src="images/more-info-icon-s.png" alt=""><span>Free</span></li>
+                        </ul>
+                        <div class="cta-btns blue">                                
+                            <div class="rate-left">US $14.00<span>Per Person</span></div>
+                            <div class="btn-box">
+                                <button type="button" class="btn-blue"  data-bs-toggle="modal" data-bs-target="#addMoreModal">Add</button>
                             </div>
                         </div>
                     </div>
-
                 </div>
-                <div class="col-sm-4 flight-info-depart-return">
-                    <div class="dep-ret-summery">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <h4>Depart</h4>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="going">
-                                    <div class="depart"><img src="images/take-off.png" alt=""> Frankfurt (FRA)
-                                        <span>Feb 16, 10:00 am</span>
-                                    </div>
-                                    <div class="arrival"><img src="images/flight-stop.png" alt=""> 
-                                        London - Heathrow (LHR)
-                                        <span>Feb 16, 2:00 pm</span>
-                                    </div>
-                                </div>                                
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="going">
-                                    <div class="depart"><img src="images/take-off.png" alt=""> London - Heathrow (LHR)<span>Feb 16, 2:15 pm</span>
-                                    </div>
-                                    <div class="arrival"><img src="images/flight-stop.png" alt=""> Los Angeles, CA (LAX)<span>Feb 16, 5:00 pm</span>
-                                    </div>
-                                </div>                                
+                    <div class="col">
+                        <div class="support-level-items green bg-green">
+                            <div class="best-value">Best Value!</div>
+                        <h3>Platinum</h3>
+                        <ul>
+                            <li>Extra Fast Expert Travel Agent
+                                Support <img src="images/more-info-icon-s.png" alt=""><span>Priority: Extra Fast Track Service</span></li>
+                            <li>No Date Change Fee <img src="images/more-info-icon-s.png" alt=""><span>Free</span></li>
+                            <li>No Cancellation Fee <img src="images/more-info-icon-s.png" alt=""><span>Free</span></li>
+                        </ul>
+                        <div class="cta-btns green">                                
+                            <div class="rate-left">US $49.00<span>Per Person</span></div>
+                            <div class="btn-box">
+                                <button type="button" class="btn-green"  data-bs-toggle="modal" data-bs-target="#addMoreModal">Add</button>
                             </div>
                         </div>
 
-                        <div class="row">
-                            <div class="col-md-12">
-                                <h4>Return</h4>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="going">
-                                    <div class="depart"><img src="images/take-off.png" alt=""> Los Angeles, CA (LAX)<span>Feb 28, 11:00 am</span>
-                                    </div>
-                                    <div class="arrival"><img src="images/flight-stop.png" alt=""> London - Heathrow (LHR)<span>Feb 28, 3:00 pm</span>
-                                    </div>
-                                </div>                                
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="going">
-                                    <div class="depart"><img src="images/take-off.png" alt=""> London - Heathrow (LHR)<span>Feb 28, 3:15 pm</span>
-                                    </div>
-                                    <div class="arrival"><img src="images/flight-stop.png" alt=""> Frankfurt (FRA)<span>Feb 28, 6:00 pm</span>
-                                    </div>
-                                </div>                                
-                            </div>
-                        </div>
+                    </div></div>
+                </div>
 
-
-
+                <div class="row total-result">
+                    <div class="col">
+                        <h3>Total to pay</h3>
+                        <div class="total-price">US$ 578.57</div>
+                        <p>Final price - no extra fees for card payments!</p>
+                        <p><span>Does not include bank fees your bank may apply for foreign transactions. Please contact your bank directly for inquiries.</span></p>
+                        <input type="submit" class="btn btn-primary" value="Submit">
                     </div>
-
                 </div>
-            </div>
+
+<!-- Modal -->
+<div class="modal fade additional-popup" id="addMoreModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body">
             <div class="row">
-                <div class="col-md-12">
-                    <div class="make-payment">
-                        <input type="submit" class="btn-primary-one" value="Make Payment">
-                        <span class="condition-text">*Does not include bank fees your bank may apply for foreign transactions. Please contact your bank directly for inquiries.</span>
+                <div class="col-md-6">
+                    <div class="info-icon">
+                        <img src="images/info-icon.png" alt="">
+                    </div>
+                    <h3>Do you really want to continue 
+                    with BASIC Support Service?</h3> 
+                    <div class="model-btn-bx">
+                        <button type="button" class="simple-btn" data-bs-dismiss="modal">No, Thanks</button>
+                        <button type="button" class="blue-model-btn">Show Support Options</button>  
+                    </div> 
+                </div>
+                <div class="col-md-6">
+                    <div class="popup-right-text">
+                        <h4>For only US$ 14 per person you can have:</h4>
+                        <ul>
+                            <li>Fast Expert Travel Agent Support</li>
+                            <li>Reduced Date Changes Fee</li>
+                            <li>Reduced Cancellation Fee</li>
+                            <li>Free Involuntary Changes Assistance Fee</li>
+                            
+                        </ul>
                     </div>
                 </div>
             </div>
-            
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+            </div>
         </form>
     </div>
       
@@ -261,7 +290,9 @@
     
 </div>
 </div>
-    
+
+
+
 <footer>
 <div class="container-xxl">
     <div class="top-footer">

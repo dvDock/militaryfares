@@ -59,7 +59,7 @@ select.input{ background-image:url(../images/down-arrow.svg); background-positio
 .input-field{ padding-bottom: 25px; }
 
 /**** Global buttons *********/
-.btn-primary{  padding: 15px 50px; color:white; background: #004aad; cursor: pointer; border:1px solid #004aad; font-weight: bold; font-size: 19px; border-radius:2px; transition: all 0.3s ease-in-out; line-height: normal; }
+.btn-primary{  padding: 15px 50px; color:white; background: #004aad; cursor: pointer; border:1px solid #004aad; font-weight: bold; font-size: 19px; border-radius:3px; transition: all 0.3s ease-in-out; line-height: normal; }
 .btn-primary:hover{ background: white; color: #004aad; }
 
 .btn-primary-one{  padding: 15px 30px; color:white; background: #004aad; cursor: pointer; border:1px solid #004aad; font-weight: 500; font-size: 16px; border-radius:3px; transition: all 0.3s ease-in-out; line-height: normal; }
@@ -92,7 +92,9 @@ header .right-header ul li a.button:hover{ background: #004aad; color: white; bo
 /*** Main content *****/
 .main-body{ padding:60px 0px; background: rgb(236,241,245); background: linear-gradient(180deg, rgba(236,241,245,1) 0%, rgba(255,255,255,1) 100%); }
 .main-page-heading{ padding-bottom: 30px; }
-.main-page-heading h1{ font-size: 24px; font-weight: 500; margin-bottom: 15px; }
+.main-page-heading h1{ font-size: 25px; font-weight: 500; margin-bottom: 15px; }
+
+.inner-bg{ background: #f4f6f8; padding:80px 0px 100px; }
 
 .riservation-sec{ padding:10px; border-radius: 10px; box-shadow: 0 2px 6px rgba(0, 0, 0, 0.16); background: white; }
 .riservation-sec .nav.form-menu{ justify-content: center; border-bottom: 1px solid #edeff2; }
@@ -267,7 +269,7 @@ body .select2-container--default .select2-selection--single .select2-selection__
 .flight-details .round-trip h4{ margin: 0px; border-left:8px solid #004aad; padding: 2px 0 2px 15px; font-size: 18px; color: #1d2025; font-weight: bold; }
 .flight-details .round-trip h4 span{ display: inline-block; padding: 0 10px; border-left: 1px solid #dbe0e4; font-size: 17px; font-weight: normal; color: #7b8087;}
 .free-cancellation{ color:#2e9543; font-weight: bold; font-size: 18px; }
-.free-cancellation span{ padding:15px 15px; }
+.free-cancellation span{ padding:15px 25px; }
 
 .flight-list{ padding:10px 60px;  }
 .flight-list .list-row{ border-bottom: 1px solid #ecf0f3; padding: 20px 0px; }
@@ -338,6 +340,10 @@ body .select2-container--default .select2-selection--single .select2-selection__
 .additional-services .missed-connection-items,
 .additional-services .support-level-items{ padding: 16px 20px 85px; position:relative; min-height: 100%; border-radius: 4px; overflow: hidden; }
 
+.additional-services .items button.item-btn,
+.additional-services .missed-connection-items button.item-btn,
+.additional-services .support-level-items button.item-btn{ position:absolute; left:20px; bottom: 20px; }
+
 .additional-services .items input.item-btn,
 .additional-services .missed-connection-items input.item-btn,
 .additional-services .support-level-items input.item-btn{ position:absolute; left:20px; bottom: 20px; }
@@ -361,11 +367,102 @@ body .select2-container--default .select2-selection--single .select2-selection__
 .additional-services .bg-gold .best-value{ background: #d1b238; }
 .additional-services .bg-green .best-value{ background: #38af8f; }
 
-.payment-details .make-payment{ display:flex; align-items: center; }
+.payment-details .make-payment{ display:flex; align-items: center; padding-top: 40px; border-top: 1px solid #e6ebf2; margin-top: 50px;; }
 .payment-details .make-payment .condition-text{ padding-left: 50px; }
 
 
-/******** Mobile responsive css here **********/
+.flight-summery .summery h4{ font-size: 24px; font-weight: 500; color: #1d2025; margin-bottom: 20px; }
+.flight-summery .summery .summery-text{ font-size: 20px; font-weight: normal; padding-top:10px; padding-bottom:10px; color: #1d2025; }
+.flight-summery .summery .summery-text-head{ font-size: 20px; font-weight: normal; padding-top:10px; padding-bottom:10px; color: #565c63; }
+
+.flight-summery .summery .summery-content{ padding-bottom: 50px; margin-bottom: 40px; border-bottom: 1px solid #e6ebf2; }
+
+.payment-information h4{ font-size: 24px; font-weight: 500; color: #1d2025; margin-bottom: 30px; }
+.promotional-section{ padding-top:0px; padding-bottom:20px; display: flex; }
+.promotional-section input[type=text]{ border-radius: 4px; border:1px solid #9097a0; padding: 12px 20px; width: 100%; }
+.promotional-section input[type=submit]{ background: #484c53; border:1px solid #484c53; color: white; padding: 12px 30px; font-size: 16px; font-weight: 500; border-radius:4px; min-width: 150px; text-align: center; margin-left:7px; margin-right: 20px; }
+.promotional-section input[type=submit]:hover{ background: white; color: #484c53; }
+
+.dep-ret-summery{ background: #f7f8f9; padding:40px 30px; border-radius: 0px; }
+.dep-ret-summery h4{ text-transform: uppercase; font-size: 18px; font-weight: bold; color: #292d30; margin:10px 0px 20px; }
+.dep-ret-summery .going{ position:relative; padding-bottom:20px; padding-bottom:30px; }
+
+.dep-ret-summery .going::before{ height: 40px; width: 2px; border-left:2px dashed #d1d6d9; content: ''; position: absolute; left:11px; top:26px; }
+
+.dep-ret-summery .going .depart,
+.dep-ret-summery .going .arrival{ position:relative; font-size: 17px; font-weight: bold; color: #4a5157; padding-bottom: 15px; padding-left: 30px; }
+.dep-ret-summery .going .depart img,
+.dep-ret-summery .going .arrival img{ position: absolute; left: 0; top:3px; }
+
+.dep-ret-summery .going .depart span,
+.dep-ret-summery .going .arrival span{ font-size: 14px; font-weight: 500; color: #7c898d; display: block; }
+
+.select-payment{ padding-top: 20px; padding-bottom: 20px; }
+.select-payment h5{ font-size: 21px; font-weight: bold; margin-bottom: 15px;}
+.select-payment p{ font-size: 16px; font-weight: 500; color: #7c898d; }
+
+.pay-with{ border-radius: 4px; border: 1px solid #e3e9ef; padding:50px 25px; display: flex; align-items: center; }
+.pay-with .form-check{ padding-right: 25px; }
+.pay-with .form-check label{ padding: 0px; font-size: 18px; font-weight: normal; color: #1d2025; } 
+
+.terms-sec-pay{ padding-top:40px; padding-bottom:20px; }
+.terms-sec-pay label{ color: #7c898d; }
+
+.thank-msg{ box-shadow: 0 3px 6px rgba(0, 74, 173, 0.10); background: white;	margin-bottom: 30px; border-radius: 5px; padding: 35px 110px 40px; }
+.thank-msg .thank-row{ display: flex; align-items: center; }
+.thank-msg .thank-row .col-md-2{ min-width: 95px; max-width: 95px; }
+.thank-msg .thank-row .col-md-10{ padding: 0 25px; }
+.thank-msg .thank-row h1{ font-size: 25px; color: #1d2025; font-weight: 500; }
+.thank-msg .thank-row p{ line-height: 25px; color: #7c898d; }
+
+.inner-details{ box-shadow: 0 3px 6px rgba(0, 74, 173, 0.10); background: white;	margin-bottom: 30px; border-radius: 5px; padding: 40px 0px 100px;}
+.passengers-details{ padding: 20px 100px 40px; border-bottom: 1px solid #e3e9ef; }
+.passengers-details h3{ font-weight: 500; font-size: 25px; color:#1d2025; margin-bottom: 20px; position: relative; }
+.passengers-details h3 img{ position: absolute; left: -35px; top:0px; }
+.passengers-details p{ color: #9aa3ab; } 
+.passengers-details .order-name{ padding:7px 0px; color: #778189; font-size: 18px; font-weight: normal; display: inline-block; }
+.passengers-details .order-data{ font-weight: bold; font-size: 21px; color: #292d30; }
+
+.booked-flight-details{ padding: 50px 100px 30px; }
+.booked-flight-details h3{ font-weight: 500; font-size: 25px; color:#1d2025; margin-bottom:40px; position: relative; }
+.booked-flight-details h4{ font-weight: bold; font-size: 23px; color:#1d2025; margin-bottom: 20px; }
+.booked-flight-details ul li{ padding: 7px 0px; font-weight: normal; color: #1d2025; }
+.booked-flight-details ul li img{ margin-right: 5px; }
+.booked-flight-details ul li span{ color:#1d2025; font-weight: bold; display: inline-block; padding:0 10px; }
+
+.airlines{ margin:0 100px; border: 1px solid #e3e9ef; padding:20px 30px; border-radius: 4px;;  }
+.airlines .flight-name{ display: flex; padding: 40px 0px; min-height: 100%; align-items: center;margin-right: 20px; border-right:1px solid #e3e9ef; }
+.airlines .flight-name img{ margin-right:15px; }
+.airlines .flight-name .info-about-flight h4{ font-weight: 500; font-size: 21px; color: #1d2025; }
+.airlines .flight-name .info-about-flight h5{ font-size: 17px; color: #89909a; font-weight: normal; }
+.airlines .flight-name .info-about-flight h5 span{ color: #1d2025; font-weight: bold; }
+.airlines .flight-info .row{ border-bottom:1px solid #e3e9ef; padding-top: 20px; padding-bottom: 20px; }
+.airlines .flight-info .row:last-child{ border-bottom: 0px; }
+.airlines .flight-info p{ font-weight: 500; color: #373b41; }
+.airlines .flight-info ul li.loc-time{ color: #738493; font-size: 19px; }
+.airlines .flight-info ul li.loc-time span{ font-size: 20px; font-weight: bold; color: #292d30; padding-right: 7px; }
+.airlines .flight-info ul li li{ font-size: 15px; color: #89909a; }
+
+.modal.additional-popup .modal-dialog{ max-width: 1170px; top: 10%; }
+.modal.additional-popup .modal-content{ padding: 60px 70px; }
+.modal.additional-popup .modal-body .info-icon{ text-align: center; margin-bottom:40px; }
+.modal.additional-popup .modal-body h3{ font-size: 25px; line-height: 41px; font-weight: 500; color: #1d2025; margin-bottom: 60px; }
+.modal.additional-popup .model-btn-bx{ text-align: center; }
+.modal.additional-popup .model-btn-bx .simple-btn{ font-size: 18px; font-weight: bold; color: #004aad; padding: 12px 40px; border: 0px; background: none; cursor: pointer; margin: 0 10px; }
+.modal.additional-popup .model-btn-bx .blue-model-btn{ border: 1px solid #004aad; background: #004aad; color: white; padding: 12px 25px; font-size: 16px; font-weight: 500; border-radius: 4px; }
+
+.popup-right-text{ border:1px solid #e3e9ef; border-radius: 4px; padding: 60px 30px 60px 35px; }
+.popup-right-text h4{ font-size: 22px; font-weight: bold; color: #1d2025; }
+.popup-right-text ul{ padding-top: 15px; }
+.popup-right-text ul li{ position: relative; padding:10px 0 10px 40px; font-size: 18px; font-weight: normal; color: #859097;  }
+.popup-right-text ul li::before{ content: ''; width: 30px; height: 30px; position: absolute; left: 0; top:10px; background: url('../images/green-right-mark.png') center no-repeat; }
+
+.modal-backdrop.show{ opacity: 0.7; }
+
+
+/******** *****************************
+***************** Mobile responsive css here **********/
+
 @media only screen and (min-width: 768px) {
 	.mobile-show{ display: none; }
 	.form-top-row .mobile-show{ display: none; }
