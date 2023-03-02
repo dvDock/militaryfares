@@ -700,7 +700,16 @@ body .select2-container--default .select2-selection--single .select2-selection__
 	.payment-details .make-payment{ flex-wrap: wrap; padding-top: 15px; margin-top: 20px; }
 	.payment-details .make-payment .btn-primary-one{ width: 100%; order: 2;; }
 	.payment-details .make-payment .condition-text{ padding:0 0 10px; order: 1; text-align: center; line-height: normal;  }
+	.promotional-section{ padding-bottom: 10px; }
+	.select-payment { padding-top: 10px; padding-bottom: 5px; }
+	.terms-sec-pay { padding-top: 20px; }
+	.terms-sec-pay label{ line-height: normal; font-size: 15px; }
+	.terms-sec-pay .form-check{ margin-bottom: 10px; }
 
+	.flight-summery{ order: 2; }
+	.flight-info-depart-return{ order: 1; margin-bottom: 40px; }
+	.payment-process .personal-detail-form.payment-details { padding: 0px 0px;  }
+	.dep-ret-summery .going{ padding-bottom: 20px; }
 
 }
 @media only screen and (max-width: 480px) {
