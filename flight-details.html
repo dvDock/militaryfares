@@ -109,12 +109,12 @@
 </div>
 
 <div class="payment-process">
-    <div class="payment-nav row">
+    <div class="payment-nav row mobile-hide">
         <div class="col"><div class="tab-item active">Passenger Details</div></div>
         <div class="col"><div class="tab-item">Additional Services</div></div>
         <div class="col"><div class="tab-item">Payment</div></div>
     </div>
-    <div class="personal-detail-form">
+    <div class="personal-detail-form mobile-hide">
         <form class="row g-3 needs-validation" novalidate>
             <div class="row">
                 <div class="col required-row input-field">*All form fields are required.</div>
@@ -146,9 +146,9 @@
                     <div class="col-md-6 input-field">
                         <div class="row">
                             <div class="col-md-12"><label>Date of birth*</label></div>
-                            <div class="col-sm-4"><input class="input form-control" type="text" placeholder="Month" id="month" required></div>
-                            <div class="col-sm-4"><input class="input form-control" type="text" placeholder="Day" id="day" required></div>
-                            <div class="col-sm-4"><input class="input form-control" type="text" placeholder="Year" id="year" required></div>
+                            <div class="col"><input class="input form-control" type="text" placeholder="Month" id="month" required></div>
+                            <div class="col"><input class="input form-control" type="text" placeholder="Day" id="day" required></div>
+                            <div class="col"><input class="input form-control" type="text" placeholder="Year" id="year" required></div>
                         </div>
                         
                         
@@ -165,7 +165,7 @@
                     
                         <div class="row">
                             <div class="col-md-12"> <label>Passport expiry date</label></div>
-                            <div class="col-sm-4"><select required class="input form-control">
+                            <div class="col"><select required class="input form-control">
                                 <option>Month</option>
                                 <option>1</option>
                                 <option>2</option>
@@ -181,8 +181,8 @@
                                 <option>12</option>
                             </select>
                             </div>
-                            <div class="col-sm-4"><input class="input form-control" type="text" placeholder="Day" required></div>
-                            <div class="col-sm-4"><input class="input form-control" type="text" placeholder="Year" required></div>
+                            <div class="col"><input class="input form-control" type="text" placeholder="Day" required></div>
+                            <div class="col"><input class="input form-control" type="text" placeholder="Year" required></div>
                         </div>
                         
                     </div>
@@ -224,6 +224,154 @@
         </form>
     </div>
       
+    <div class="accordion mobile-show" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                Passenger Details
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+                <div class="personal-detail-form">
+                    <form class="row g-3 needs-validation" novalidate>
+                        <div class="row">
+                            <div class="col required-row input-field">*All form fields are required.</div>
+                        </div>
+                        <div class="row">
+                            <div class="col adult input-field">
+                                <h3><img src="images/gender-icon.png" alt="Adult"> <span>Adult</span></h3>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                    <label class="form-check-label" for="exampleRadios1">Male</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                                    <label class="form-check-label" for="exampleRadios2">Female</label>
+                                </div>                          
+                            </div>
+                        </div>
+                        <div class="basic-details">
+                            <div class="row">
+                                <div class="col-md-12"><h5 class="uppercase">Basic Details</h5></div>
+                                <div class="col-md-6 input-field">
+                                    <label>First name(s) as in your ID*</label>
+                                    <input type="text" class="input form-control" placeholder="-" id="first-name" required>
+                                </div>
+                                <div class="col-md-6 input-field">
+                                    <label>Family name(s) as in your ID*</label>
+                                    <input type="text" class="input" placeholder="-" id="first-name" required>
+                                </div>
+                                <div class="col-md-6 input-field">
+                                    <div class="row">
+                                        <div class="col-md-12"><label>Date of birth*</label></div>
+                                        <div class="col"><input class="input form-control" type="text" placeholder="Month" id="month" required></div>
+                                        <div class="col"><input class="input form-control" type="text" placeholder="Day" id="day" required></div>
+                                        <div class="col"><input class="input form-control" type="text" placeholder="Year" id="year" required></div>
+                                    </div>
+                                    
+                                    
+                                </div>
+                                <div class="col-md-6 input-field">
+                                    <label>Nationality*</label>
+                                    <input type="text" class="input form-control" placeholder="-" required>
+                                </div>
+                                <div class="col-md-6 input-field">
+                                    <label>Passport number</label> 
+                                    <input type="number" class="input form-control" placeholder="" required>
+                                </div>
+                                <div class="col-md-6 input-field">
+                                
+                                    <div class="row">
+                                        <div class="col-md-12"> <label>Passport expiry date</label></div>
+                                        <div class="col"><select required class="input form-control">
+                                            <option>Month</option>
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option>5</option>
+                                            <option>6</option>
+                                            <option>7</option>
+                                            <option>8</option>
+                                            <option>8</option>
+                                            <option>10</option>
+                                            <option>11</option>
+                                            <option>12</option>
+                                        </select>
+                                        </div>
+                                        <div class="col"><input class="input form-control" type="text" placeholder="Day" required></div>
+                                        <div class="col"><input class="input form-control" type="text" placeholder="Year" required></div>
+                                    </div>
+                                    
+                                </div>
+                                <div class="col-md-12 input-field">
+                                    <label>Frequent flyer program</label>
+                                    <input type="text" class="input form-control" placeholder="" required>
+                                </div>                
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12"><h5 class="uppercase">Contact Details</h5></div>
+                                <div class="col-md-6 input-field">
+                                    <label>Email*</label>
+                                    <input type="email" class="input form-control" placeholder="" required>
+                                </div>
+                                <div class="col-md-6 input-field">
+                                    <label>Confirm Email*</label>
+                                    <input type="email" class="input form-control" placeholder="" required>
+                                </div>
+                                <div class="col-md-6 input-field">
+                                    <label>Country Code*</label>
+                                    <input type="number" class="input form-control" placeholder="" required>
+                                </div>
+                                <div class="col-md-6 input-field">
+                                    <label>Phone Number*</label>
+                                    <input type="number" class="input form-control" placeholder="" required>
+                                </div>
+                            </div>
+                            
+            
+                        </div>
+                    </form>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Additional Services
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Payment
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row total-result">
+        <div class="col">
+            <h3>Total to pay</h3>
+            <div class="total-price">US$ 578.57</div>
+            <p>Final price - no extra fees for card payments!</p>
+            <p><span>Does not include bank fees your bank may apply for foreign transactions. Please contact your bank directly for inquiries.</span></p>
+            <input type="submit" class="btn btn-primary" value="Submit">
+        </div>
+    </div>
 
 </div>   
     

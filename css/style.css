@@ -536,6 +536,14 @@ body .select2-container--default .select2-selection--single .select2-selection__
 	header .right-header ul li a{ font-size: 0; }
 	.special-offer .offer-box a span.post-img{ margin-right: 10px; }
 	.special-offer .offer-box a span.content{ padding: 0 0px 0 0px; }
+
+	.passengers-details{ padding: 20px 60px 40px; }
+	.booked-flight-details { padding: 50px 60px 30px;  }
+	.airlines{ margin: 0 60px; }
+	.modal.additional-popup .modal-content { padding:40px 50px; }
+	.modal.additional-popup .modal-body h3{ margin-bottom: 40px; }
+	.popup-right-text{ padding: 40px 30px 40px 25px; }
+
 }
 @media only screen and (max-width: 767px) {
 	.mobile-hide{ display: none; }
@@ -586,14 +594,124 @@ body .select2-container--default .select2-selection--single .select2-selection__
 	.traveller .form-control{ padding: 5px 0 5px 5px; }
 	.form-top-row .right ul li.traveller { max-width: 100px;  }
 
+
+	.result-details{ padding: 10px 25px; margin-bottom:30px; }
+	.result-details .list-row{ font-size: 16px; align-items: center; }
+	.result-details .list-row .col { flex: min-content; }
+	.result-details .list-row .col span{ display: block; padding: 0; }
+	.result-details .list-row .col:last-child{ width: 100%; flex: auto; font-size: 13px; font-weight: normal; display: flex; padding-top: 15px; }
+	.result-details .list-row .col:last-child span{ font-weight: normal; padding-left: 10px; }
+
+	.row-filter-search{ display: block; }
+	.row-filter-search .filter-colm{ width: 100%; margin-bottom: 10px; padding: 10px 15px; }
+
+	.search-result-list .total-airfare{ text-align: center; display: block; padding: 20px 25px; }
+	.search-result-list .total-airfare .airfare-data{ font-size: 24px; padding-bottom: 10px; }
+	.search-result-list .total-airfare .airfare-data span{ font-size: 22px; }
+	.search-result-list .total-airfare .butn-select button{ width: 100%; text-align: center; }
+	.search-result-list .list-box { padding:10px 0px; }
+	.search-result-list .ticket-list-row{ position: relative; padding-left: 80px; flex-wrap: wrap; }
+	.search-result-list .ticket-list-row .name-logo{ position:absolute; left: 20px; top: 30px; }
+	.search-result-list .ticket-list-row .name-logo img{ max-width: 60px; }
+	.pagination { text-align: center; display: block; padding-bottom: 20px;}
+	.search-result-list .ticket-list-row .flight-time{ padding:0 0 10px; width: 48%; }
+	.search-result-list .ticket-list-row .colm.stop{ width:48%; }	
+	.search-result-list .ticket-list-row .detail-btn{ width: 100%; }
+	.search-result-list .ticket-list-row .flight-icon{ width: 100%; padding-bottom: 10px; }
+	.search-result-list .ticket-list-row .colm.time{ width: 48%;  } 
+	.search-result-list .ticket-list-row .flight-icon img{ transform: rotate(90deg); }
+
+	.thank-msg{ padding: 25px 10px 30px; }
+	.thank-msg .thank-row{ display: block; text-align: center; }
+	.thank-msg .thank-row .col-md-2{ max-width: inherit; padding-bottom: 15px;}
+	.thank-msg .thank-row .col-md-2 img{ max-width: 60px; }
+
+	.passengers-details{ padding: 10px 20px 20px; }
+	.passengers-details h3 img{ position: static; }
+	.passengers-details .order-name{ font-size: 16px; }
+	.passengers-details .order-data{ font-size: 17px; }
+	.booked-flight-details { padding:20px 20px 20px; }
+	.booked-flight-details h3{ margin-bottom: 20px; }
+	.inner-details{ padding: 20px 0px 30px; }
+	.airlines{ margin: 0 10px; padding: 20px 20px; }
+	.airlines .flight-name{ margin-right:0px; margin-bottom: 20px;
+		border-right:0; border-bottom: 1px solid #e3e9ef; padding:0px 0px 20px; }
+	.flight-info .text-center{ text-align: left !important; padding-top:10px; padding-bottom: 10px; }
+	.flight-info .text-center img{ transform: rotate(90deg); }
+	.airlines .flight-name .info-about-flight h4{ font-size: 19px; }
+	.airlines .flight-name .info-about-flight h5{ font-size: 16px; }
+	.booked-flight-details h4{ font-size: 20px; margin-bottom: 10px; }
+
+	.modal.additional-popup .modal-dialog{ top:6%; margin-left: 20px;		margin-right: 20px; }
+	.modal.additional-popup .modal-body h3{ text-align: center; margin-bottom: 30px; }
+	.modal.additional-popup .model-btn-bx{ padding-bottom: 30px; }
+	.modal.additional-popup .modal-body .info-icon{ margin-bottom: 20px; }
+	.modal.additional-popup .modal-body .info-icon img{ max-width: 80px; }
+	.modal.additional-popup .modal-content { padding: 25px 20px; }
+	.popup-right-text{ padding: 25px; }
+
+	.main-page-heading{ padding-bottom: 30px; }
+	.main-page-heading h1{ text-align: center; }
+
+	.flight-details .round-trip h4{ text-align: center; border-left: 0; }
+	.flight-details .round-trip h4 span{ padding: 10px 40px; text-align: center; border: 0; font-size: 14px; }
+	.free-cancellation{ text-align: center; }
+	.free-cancellation span{ display: block; padding: 15px 45px; font-size: 15px; }
+	.free-cancellation span img{ margin: 0 auto 10px; display: block; }
+	
+	.personal-detail-form {	padding: 30px 20px; }
+
+	.additional-services h2{ text-align: center; }
+	.additional-services .items, .additional-services .missed-connection-items, .additional-services .support-level-items{ text-align: center; margin: 10px 0; min-height: inherit; }
+	.additional-services .items input.item-btn, .additional-services .missed-connection-items input.item-btn, .additional-services .support-level-items input.item-btn{ right: 0px;	margin: 0 auto;	width: 85%; left: 0px; }
+	.additional-services .support-level-items{ text-align: left; }
+	.total-result{ padding-top: 25px; }
+	.additional-services .total-result h3{ font-size: 22px; }
+	.total-result .total-price{ font-size: 45px; }
+	.total-result .btn { margin-top: 10px; width: 100%; }
+	.flight-details .round-trip h4{ padding:10px 0 0; position: relative; }
+	.flight-details .round-trip h4::before{ content: ''; width: 25px; height: 6px; position: absolute; top: -15px; left: 0; right: 0; background: #004aad; margin: 0 auto; display: block; }
+	.payment-process{ padding: 15px; }
+
+	.payment-process .accordion .accordion-item{ border: 0px; }
+	.payment-process .accordion .accordion-body{ padding: 0px; }
+	.payment-process .accordion .personal-detail-form {	padding:35px 10px; }
+
+	.flight-list { padding: 10px 40px; }
+
+	.payment-process .accordion .accordion-item .accordion-header .accordion-button{ font-size: 20px; font-weight: bold; color: #16498d; position: relative; padding-left: 35px; background: none; padding-bottom: 25px; }
+	.payment-process .accordion .accordion-item .accordion-header .accordion-button:focus{ box-shadow: none; }
+	.payment-process .accordion .accordion-item .accordion-header .accordion-button::before{ height: 28px; width: 28px; background: #e8eef6; border-radius: 100%; text-align: center; font-size: 15px; color: #16498d; line-height: 28px; content: '1'; position: absolute; left: 0; top: 15px; }
+	
+	.payment-process .accordion .accordion-item .accordion-header .accordion-button::after{ height: 35px; width: 35px; background-color: #fff; border-radius: 100%; text-align: center; content: ''; position: absolute; right: 0; top: 10px; box-shadow: 0 0 7px rgba(0, 0, 0, 0.15); background-image: url('../images/min-icon.png'); background-position: center; background-repeat: no-repeat; }
+	
+	.payment-process .accordion .accordion-item .accordion-header .accordion-button.collapsed{ background: none; color: #92979e; }
+	.payment-process .accordion .accordion-item .accordion-header .accordion-button.collapsed::before{ color: #92979e; }
+
+	.payment-process .accordion .accordion-item .accordion-header .accordion-button.collapsed::after{ background-image: url('../images/plus-icon.png'); }
+	.total-result{ border-top: 1px solid #ecf0f3; }
+	.flight-summery .summery .summery-content{ padding-bottom: 20px; margin-bottom:30px; }
+	.flight-summery .summery h4,
+	.payment-information h4{ text-align: center; }
+	.promotional-section{ flex-wrap: wrap; }
+	.promotional-section input[type="submit"]{ width: 100%; text-align: center; margin:10px 0 0px; }
+	.payment-process .personal-detail-form.payment-details { padding: 20px 0px; }
+	.pay-with{ display: block;  padding: 15px 10px; }
+	.payment-details .make-payment{ flex-wrap: wrap; padding-top: 15px; margin-top: 20px; }
+	.payment-details .make-payment .btn-primary-one{ width: 100%; order: 2;; }
+	.payment-details .make-payment .condition-text{ padding:0 0 10px; order: 1; text-align: center; line-height: normal;  }
+
+
 }
 @media only screen and (max-width: 480px) {
 	.riservation-sec .tab-content{ padding: 10px; }
 	.form-top-row .right li select { max-width: 90px; }
 	.form-top-row .right ul li { margin: 0 2px; }
-	
+	input.input, select.input{ padding: 12px 15px; }
+	label{ padding-bottom:5px; }
+	.input-field { padding-bottom:15px; }
 }
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 375px) { 
 		
 	
 }
