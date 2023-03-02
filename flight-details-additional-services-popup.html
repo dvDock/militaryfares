@@ -69,7 +69,7 @@
         <div class="col-md-5 free-cancellation text-right"><span><img src="images/time-icon-green.png" alt=""> cancellation within 24 hours of booking!</span></div>
     </div>
 </div>
-<div class="flight-list">
+<div class="flight-list mobile-hide">
     <div class="list-row row">
         
         <div class="Departure col-md-4 departure-time text-left"><span class="flight-name"><img src="images/flight-company-logo.png" alt=""> FRA</span> Departure <span class="time">10:00 am</span> Feb 16</div>
@@ -91,7 +91,7 @@
     
 
 </div>
-<div class="bottom-row">
+<div class="bottom-row mobile-hide">
     <div class="row">
         <div class="col-md-6">
             <div class="total-fairs">
@@ -106,15 +106,59 @@
     </div>
 </div>
 
+<div class="mobile-show">
+    <div class="flight-data-mobile collapse" data-bs-toggle="collapse" id="flightDetails-mobile">
+        <div class="flight-list">
+            <div class="list-row row">
+                
+                <div class="Departure col-md-4 departure-time text-left"><span class="flight-name"><img src="images/flight-company-logo.png" alt=""> FRA</span> Departure <span class="time">10:00 am</span> Feb 16</div>
+                <div class="stop col-md-1 stops text-center"><img src="images/stop-icon.png" alt=""> 1 stop</div>
+                <div class="col-md-2 location text-center"><img src="images/plan-icon.png" alt=""> <span class="mobile-hide">LAX</span></div>
+                <div class="arival col-md-3 arrival-date text-center"><span class="mobile-show">LAX</span>Arrival <span class="time">5:00 pm</span> Feb 16</div>
+                <div class="col arrival-time text-center"><img src="images/clock-gray.png" alt=""> 7h 00m</div>
+                <div class="col more-detail text-right"><a href="#">Details <img src="images/add-icon.png" alt=""></a></div>
+            </div>
+            <div class="list-row row">
+                
+                <div class="Departure col-md-4 departure-time text-left"><span class="flight-name"><img src="images/flight-company-logo.png" alt=""> LAX</span> Departure <span class="time">11:00 am</span> Feb 28</div>
+                <div class="stop col-md-1 stops text-center"><img src="images/stop-icon.png" alt=""> 1 stop</div>
+                <div class="col-md-2 location text-center"><img src="images/plan-icon.png" alt=""> <span class="mobile-hide">FRA</span></div>
+                <div class="arival col-md-3 arrival-date text-center"><span class="mobile-show">FRA</span>Arrival <span class="time">7:00 pm</span> Feb 28</div>
+                <div class="col arrival-time text-center"><img src="images/clock-gray.png" alt=""> 8h 00m</div>
+                <div class="col more-detail text-right"><a href="#">Details <img src="images/add-icon.png" alt=""></a></div>
+            </div>
+            
+        
+        </div>
+        <div class="bottom-row">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="total-fairs">
+                    <span class="small-title">Total Airfare:</span> <span class="totoal-price-small">US$ 578.57</span> <span class="per-person">Per Person</span></div>
+                </div>
+                <div class="col-md-6 text-right">
+                    <ul class="other-info">
+                        <li><img src="images/multi-user-icon.png" alt=""> Passenger: <span>1</span></li>
+                        <li><img src="images/star-icon.png" alt=""> Cabin Class: <span>Economy</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="more-detail-btn">
+        <a class="collapsed" data-bs-toggle="collapse" href="#flightDetails-mobile" role="button" role="button">More Details <img src="images/down-arrow-blue.png" alt=""></a> 
+    </div>
+</div>
+
 </div>
 
 <div class="payment-process">
-    <div class="payment-nav row">
+    <div class="payment-nav row mobile-hide">
         <div class="col"><div class="tab-item">Passenger Details</div></div>
         <div class="col"><div class="tab-item active">Additional Services</div></div>
         <div class="col"><div class="tab-item">Payment</div></div>
     </div>
-    <div class="personal-detail-form">
+    <div class="personal-detail-form mobile-hide">
         <form class="row g-3 needs-validation" novalidate>
             
             
@@ -244,7 +288,443 @@
                     </div>
                 </div>
 
-<!-- Modal -->
+
+
+            </div>
+        </form>
+    </div>
+      
+    <div class="accordion mobile-show" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header collapsed" id="headingOne">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                Passenger Details
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+                <div class="personal-detail-form">
+                    <form class="row g-3 needs-validation" novalidate>
+                        <div class="row">
+                            <div class="col required-row input-field">*All form fields are required.</div>
+                        </div>
+                        <div class="row">
+                            <div class="col adult input-field">
+                                <h3><img src="images/gender-icon.png" alt="Adult"> <span>Adult</span></h3>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                    <label class="form-check-label" for="exampleRadios1">Male</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                                    <label class="form-check-label" for="exampleRadios2">Female</label>
+                                </div>                          
+                            </div>
+                        </div>
+                        <div class="basic-details">
+                            <div class="row">
+                                <div class="col-md-12"><h5 class="uppercase">Basic Details</h5></div>
+                                <div class="col-md-6 input-field">
+                                    <label>First name(s) as in your ID*</label>
+                                    <input type="text" class="input form-control" placeholder="-" id="first-name" required>
+                                </div>
+                                <div class="col-md-6 input-field">
+                                    <label>Family name(s) as in your ID*</label>
+                                    <input type="text" class="input" placeholder="-" id="first-name" required>
+                                </div>
+                                <div class="col-md-6 input-field">
+                                    <div class="row">
+                                        <div class="col-md-12"><label>Date of birth*</label></div>
+                                        <div class="col"><input class="input form-control" type="text" placeholder="Month" id="month" required></div>
+                                        <div class="col"><input class="input form-control" type="text" placeholder="Day" id="day" required></div>
+                                        <div class="col"><input class="input form-control" type="text" placeholder="Year" id="year" required></div>
+                                    </div>
+                                    
+                                    
+                                </div>
+                                <div class="col-md-6 input-field">
+                                    <label>Nationality*</label>
+                                    <input type="text" class="input form-control" placeholder="-" required>
+                                </div>
+                                <div class="col-md-6 input-field">
+                                    <label>Passport number</label> 
+                                    <input type="number" class="input form-control" placeholder="" required>
+                                </div>
+                                <div class="col-md-6 input-field">
+                                
+                                    <div class="row">
+                                        <div class="col-md-12"> <label>Passport expiry date</label></div>
+                                        <div class="col"><select required class="input form-control">
+                                            <option>Month</option>
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option>5</option>
+                                            <option>6</option>
+                                            <option>7</option>
+                                            <option>8</option>
+                                            <option>8</option>
+                                            <option>10</option>
+                                            <option>11</option>
+                                            <option>12</option>
+                                        </select>
+                                        </div>
+                                        <div class="col"><input class="input form-control" type="text" placeholder="Day" required></div>
+                                        <div class="col"><input class="input form-control" type="text" placeholder="Year" required></div>
+                                    </div>
+                                    
+                                </div>
+                                <div class="col-md-12 input-field">
+                                    <label>Frequent flyer program</label>
+                                    <input type="text" class="input form-control" placeholder="" required>
+                                </div>                
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12"><h5 class="uppercase">Contact Details</h5></div>
+                                <div class="col-md-6 input-field">
+                                    <label>Email*</label>
+                                    <input type="email" class="input form-control" placeholder="" required>
+                                </div>
+                                <div class="col-md-6 input-field">
+                                    <label>Confirm Email*</label>
+                                    <input type="email" class="input form-control" placeholder="" required>
+                                </div>
+                                <div class="col-md-6 input-field">
+                                    <label>Country Code*</label>
+                                    <input type="number" class="input form-control" placeholder="" required>
+                                </div>
+                                <div class="col-md-6 input-field">
+                                    <label>Phone Number*</label>
+                                    <input type="number" class="input form-control" placeholder="" required>
+                                </div>
+                            </div>
+                            <div class="row total-result">
+                                <div class="col">
+                                    <h3>Total to pay</h3>
+                                    <div class="total-price">US$ 578.57</div>
+                                    <p>Final price - no extra fees for card payments!</p>
+                                    <p><span>Does not include bank fees your bank may apply for foreign transactions. Please contact your bank directly for inquiries.</span></p>
+                                    <input type="submit" class="btn btn-primary" value="Submit">
+                                </div>
+                            </div>
+            
+                        </div>
+                    </form>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Additional Services
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse show" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              
+                <div class="personal-detail-form">
+                    <form class="row g-3 needs-validation" novalidate>
+                        
+                        
+                        <div class="basic-details additional-services">
+                            <div class="row mb-5 cancellation-protection">
+                                <div class="col-md-12 mb-2">
+                                    <h2>Cancellation Protection <img src="images/more-info-icon.png" alt=""></h2>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="items light-gray bg-gray">
+                                       <h3>No Cancellation Protection</h3>
+                                       <p>If you don't want any cancellation
+                                        protection</p>
+                                        <button type="button" class="btn-gray item-btn" data-bs-toggle="modal" data-bs-target="#addMoreModal" >Add</button>
+
+
+                                    </div>
+                                 </div>
+                                <div class="col-md-4">
+                                    <div class="items blue bg-blue">
+                                       <h3>Standard <img src="images/more-info-icon.png" alt=""></h3>
+                                      <p>You may cancel if you are ill or
+                                        due to death in your family.</p>
+                                        <h4>US $49.00 <span>Per Person</span></h4>
+                                     
+                                     <button type="button" class="btn-blue item-btn" data-bs-toggle="modal" data-bs-target="#addMoreModal" >Add</button>
+
+                                     </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="items gold bg-gold">
+                                        <div class="best-value">Best Value!</div>
+                                         <h3>Gold <img src="images/more-info-icon.png" alt=""></h3>
+                                        <p>You can cancel for whatever
+                                        reason - no questions asked!</p>
+                                        <h4>US $105.00 <span>Per Person</span></h4>
+                                     
+                                     <button type="button" class="btn-gold item-btn" data-bs-toggle="modal" data-bs-target="#addMoreModal" >Add</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row missed-connection mb-5">
+                                <div class="col-md-12 mb-2">
+                                    <h2>Missed Connection <img src="images/more-info-icon.png" alt=""></h2>
+                                </div>
+                                <div class="col-md-6">
+                                  <div class="missed-connection-items bg-gray">
+                                        <h3>No!</h3>
+                                    <p>If you don't want any missed cancellation protection.</p>
+                                    <h4>US $00.00 <span>Per Person</span></h4>
+                                    
+                                    <button type="button" class="btn-gray item-btn" data-bs-toggle="modal" data-bs-target="#addMoreModal" >Add</button>
+                                  </div>
+                                </div>
+                                <div class="col-md-6">
+                                 <div class="missed-connection-items bg-gray">
+                                    <h3>Yes!</h3>
+                                <p>If you miss your connecting, flight just book the next one.
+                                    With this protection plan you are 100% covered.</p>
+                                <h4>US $56.00 <span>Per Person</span></h4>
+                                <button type="button" class="btn-gray item-btn" data-bs-toggle="modal" data-bs-target="#addMoreModal" >Add</button>
+            
+                              </div>
+                            </div>
+                            </div>
+                            <div class="row support-level">
+                                <div class="col-md-12 mb-2">
+                                    <h2>Support Level <img src="images/more-info-icon.png" alt=""></h2>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="support-level-items bg-gray">
+                                        <h3>Basic</h3>
+                                        <ul>
+                                            <li>Expert Travel Agent Support <img src="images/more-info-icon-s.png" alt=""> <span>Priority: Basic</span></li>
+                                            <li>Date Change Fee/ Cancellation
+                                                Fee <img src="images/more-info-icon-s.png" alt=""> <span>US$ 70</span></li>
+                                            <li>Involuntary Change Assistance
+                                                Fee <img src="images/more-info-icon-s.png" alt=""><span>US$ 22</span></li>                                    
+                                        </ul>
+                                        <div class="cta-btns">                                
+                                            <div class="rate-left"> US $-.--<span>Per Person</span></div>
+                                            <div class="btn-box">
+                                                <button type="button" class="btn-gray item-btn" data-bs-toggle="modal" data-bs-target="#addMoreModal" >Add</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="support-level-items blue bg-blue">
+                                    <h3>Premium</h3>
+                                    <ul>
+                                        <li>Fast Expert Travel Agent Support <img src="images/more-info-icon-s.png" alt=""><span>Priority: Fast Track Service</span></li>
+                                        <li>Reduced Date Changes Fee <img src="images/more-info-icon-s.png" alt=""><span>US$ 22</span></li>
+                                        <li>Reduced Cancellation Fee <img src="images/more-info-icon-s.png" alt=""><span>US$ 22</span></li>
+                                        <li>Free Involuntary Changes
+                                            Assistance Fee <img src="images/more-info-icon-s.png" alt=""><span>Free</span></li>
+                                    </ul>
+                                    <div class="cta-btns blue">                                
+                                        <div class="rate-left">US $14.00<span>Per Person</span></div>
+                                        <div class="btn-box">
+                                            <button type="button" class="btn-blue" data-bs-toggle="modal" data-bs-target="#addMoreModal" >Add</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                                <div class="col-md-4">
+                                    <div class="support-level-items green bg-green">
+                                        <div class="best-value">Best Value!</div>
+                                    <h3>Platinum</h3>
+                                    <ul>
+                                        <li>Extra Fast Expert Travel Agent
+                                            Support <img src="images/more-info-icon-s.png" alt=""><span>Priority: Extra Fast Track Service</span></li>
+                                        <li>No Date Change Fee <img src="images/more-info-icon-s.png" alt=""><span>Free</span></li>
+                                        <li>No Cancellation Fee <img src="images/more-info-icon-s.png" alt=""><span>Free</span></li>
+                                    </ul>
+                                    <div class="cta-btns green">                                
+                                        <div class="rate-left">US $49.00<span>Per Person</span></div>
+                                        <div class="btn-box">
+                                            <button type="button" class="btn-green" data-bs-toggle="modal" data-bs-target="#addMoreModal" >Add</button>
+                                        </div>
+                                    </div>
+            
+                                </div></div>
+                            </div>
+            
+                            <div class="row total-result">
+                                <div class="col">
+                                    <h3>Total to pay</h3>
+                                    <div class="total-price">US$ 578.57</div>
+                                    <p>Final price - no extra fees for card payments!</p>
+                                    <p><span>Does not include bank fees your bank may apply for foreign transactions. Please contact your bank directly for inquiries.</span></p>
+                                    <input type="submit" class="btn btn-primary" value="Submit">
+                                </div>
+                            </div>
+            
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Payment
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              
+                <div class="personal-detail-form payment-details">
+                    <form class="g-3 needs-validation" novalidate>
+                        <div class="row">
+                            <div class="col-md-8 flight-summery">
+                                <div class="summery">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <h4>Summery of Charges</h4>
+                                        </div>
+                                    </div>
+                                    <div class="summery-content">
+                                        <div class="row">
+                                            <div class="col col-md-5 summery-text-head">Total Airfare:</div>
+                                            <div class="col col-md-7 summery-text">US$ 578.57</div>                                
+                                        </div>
+                                        <div class="row">
+                                            <div class="col col-md-5 summery-text-head">Total:</div>
+                                            <div class="col col-md-7 summery-text"><strong>US$ 578.57</strong></div>
+                                        </div>
+                                    </div>
+                                </div>
+            
+                                <div class="payment-information">
+                                    <div class="row">
+                                        <div class="col"><h4>Payment Information</h4></div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col promotional-section">
+                                            <input type="text" placeholder="Promotional Code" name="promo">
+                                            <input type="submit" value="Apply">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col select-payment">
+                                            <h5>Please select payment method</h5>
+                                            <p>The billing address for credit/debit cards used should match your address.</p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="pay-with">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefaultPay">
+                                                    <label class="form-check-label" for="flexCheckDefaultPay">Pay with credit card</label>
+                                                </div>
+                                                <div class="visa-img">
+                                                    <img src="images/visa-pay.png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col terms-sec-pay">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                <label class="form-check-label" for="flexCheckDefault">I agree to the <a href="#">Terms & Conditions</a>, <a href="#">Cancellation and Change Rules</a> and <a href="#">Privacy Policy</a>.
+                                                </label>
+                                              </div>
+                                              <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                                                <label class="form-check-label" for="flexCheckChecked">Subscribe to our email newsletter for useful tips, valuable resources and discounts.
+                                                </label>
+                                              </div>
+                                        </div>
+                                    </div>
+                                </div>
+            
+                            </div>
+                            <div class="col-md-4 flight-info-depart-return">
+                                <div class="dep-ret-summery">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <h4>Depart</h4>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="going">
+                                                <div class="depart"><img src="images/take-off.png" alt=""> Frankfurt (FRA)
+                                                    <span>Feb 16, 10:00 am</span>
+                                                </div>
+                                                <div class="arrival"><img src="images/flight-stop.png" alt=""> 
+                                                    London - Heathrow (LHR)
+                                                    <span>Feb 16, 2:00 pm</span>
+                                                </div>
+                                            </div>                                
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="going">
+                                                <div class="depart"><img src="images/take-off.png" alt=""> London - Heathrow (LHR)<span>Feb 16, 2:15 pm</span>
+                                                </div>
+                                                <div class="arrival"><img src="images/flight-stop.png" alt=""> Los Angeles, CA (LAX)<span>Feb 16, 5:00 pm</span>
+                                                </div>
+                                            </div>                                
+                                        </div>
+                                    </div>
+            
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <h4>Return</h4>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="going">
+                                                <div class="depart"><img src="images/take-off.png" alt=""> Los Angeles, CA (LAX)<span>Feb 28, 11:00 am</span>
+                                                </div>
+                                                <div class="arrival"><img src="images/flight-stop.png" alt=""> London - Heathrow (LHR)<span>Feb 28, 3:00 pm</span>
+                                                </div>
+                                            </div>                                
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="going">
+                                                <div class="depart"><img src="images/take-off.png" alt=""> London - Heathrow (LHR)<span>Feb 28, 3:15 pm</span>
+                                                </div>
+                                                <div class="arrival"><img src="images/flight-stop.png" alt=""> Frankfurt (FRA)<span>Feb 28, 6:00 pm</span>
+                                                </div>
+                                            </div>                                
+                                        </div>
+                                    </div>
+            
+            
+            
+                                </div>
+            
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="make-payment">
+                                    <input type="submit" class="btn-primary-one" value="Make Payment">
+                                    <span class="condition-text">*Does not include bank fees your bank may apply for foreign transactions. Please contact your bank directly for inquiries.</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </form>
+                </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal -->
 <div class="modal fade additional-popup" id="addMoreModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
@@ -279,11 +759,6 @@
       </div>
     </div>
   </div>
-
-            </div>
-        </form>
-    </div>
-      
 
 </div>   
     

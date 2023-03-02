@@ -62,7 +62,7 @@ select.input{ background-image:url(../images/down-arrow.svg); background-positio
 .btn-primary{  padding: 15px 50px; color:white; background: #004aad; cursor: pointer; border:1px solid #004aad; font-weight: bold; font-size: 19px; border-radius:3px; transition: all 0.3s ease-in-out; line-height: normal; }
 .btn-primary:hover{ background: white; color: #004aad; }
 
-.btn-primary-one{  padding: 15px 30px; color:white; background: #004aad; cursor: pointer; border:1px solid #004aad; font-weight: 500; font-size: 16px; border-radius:3px; transition: all 0.3s ease-in-out; line-height: normal; }
+.btn-primary-one{  padding: 15px 30px; color:white; background: #16498d; cursor: pointer; border:1px solid #16498d; font-weight: 500; font-size: 16px; border-radius:3px; transition: all 0.3s ease-in-out; line-height: normal; }
 .btn-primary-one:hover{ background: white; color: #004aad; }
 
 .btn-gray{  padding: 10px 35px; color:white; background: #525d60; cursor: pointer; border:1px solid #525d60; font-weight: bold; font-size: 18px; border-radius:2px; transition: all 0.3s ease-in-out; line-height: normal; }
@@ -605,7 +605,7 @@ body .select2-container--default .select2-selection--single .select2-selection__
 	.row-filter-search{ display: block; }
 	.row-filter-search .filter-colm{ width: 100%; margin-bottom: 10px; padding: 10px 15px; }
 
-	.search-result-list .total-airfare{ text-align: center; display: block; padding: 20px 25px; }
+	.search-result-list .total-airfare{ text-align: center; display: block; padding: 20px 25px 25px; }
 	.search-result-list .total-airfare .airfare-data{ font-size: 24px; padding-bottom: 10px; }
 	.search-result-list .total-airfare .airfare-data span{ font-size: 22px; }
 	.search-result-list .total-airfare .butn-select button{ width: 100%; text-align: center; }
@@ -696,13 +696,13 @@ body .select2-container--default .select2-selection--single .select2-selection__
 	.promotional-section{ flex-wrap: wrap; }
 	.promotional-section input[type="submit"]{ width: 100%; text-align: center; margin:10px 0 0px; }
 	.payment-process .personal-detail-form.payment-details { padding: 20px 0px; }
-	.pay-with{ display: block;  padding: 15px 10px; }
+	.pay-with{ display: block;  padding: 20px 15px; }
 	.payment-details .make-payment{ flex-wrap: wrap; padding-top: 15px; margin-top: 20px; }
 	.payment-details .make-payment .btn-primary-one{ width: 100%; order: 2;; }
 	.payment-details .make-payment .condition-text{ padding:0 0 10px; order: 1; text-align: center; line-height: normal;  }
 	.promotional-section{ padding-bottom: 10px; }
 	.select-payment { padding-top: 10px; padding-bottom: 5px; }
-	.terms-sec-pay { padding-top: 20px; }
+	.terms-sec-pay { padding-top: 20px; padding-bottom: 0px; }
 	.terms-sec-pay label{ line-height: normal; font-size: 15px; }
 	.terms-sec-pay .form-check{ margin-bottom: 10px; }
 
@@ -710,7 +710,38 @@ body .select2-container--default .select2-selection--single .select2-selection__
 	.flight-info-depart-return{ order: 1; margin-bottom: 40px; }
 	.payment-process .personal-detail-form.payment-details { padding: 0px 0px;  }
 	.dep-ret-summery .going{ padding-bottom: 20px; }
-
+	.dep-ret-summery{ padding: 20px 30px 10px; }
+	.flight-summery .summery .summery-text-head{ font-size: 18px; }
+	.flight-summery .summery .summery-text{ font-size: 18px; text-align: right; }
+	.visa-img{ padding-top: 10px; }
+	.more-detail-btn{ text-align: center; padding: 15px 25px; }
+	.more-detail-btn a{ font-size: 15px; font-weight: bold; color: #217ee7; }
+	.more-detail-btn a img{ margin-left: 7px; transform: rotate(-180deg);}
+	.more-detail-btn a.collapsed img{ transform: rotate(0deg); }
+	
+	.mobile-show .flight-list { padding: 10px 10px; }
+	.mobile-show .flight-list .list-row{ display: flex; flex-wrap: wrap; align-items: center; }
+	.mobile-show .flight-list .list-row .location{ text-align: left !important; padding-left: 50px; padding-top: 10px; padding-bottom: 10px; }
+	.flight-list .list-row .flight-name{ padding-right: 10px; }
+	.flight-list .list-row .departure-time{ width: auto; }
+	.flight-list .list-row .stops{ width: auto; border-left: 1px solid #aebac4; }
+	.mobile-show .flight-list .list-row .location span{ display: none; padding: 0; }
+	.flight-list .list-row .arrival-date{ width: auto; padding-left: 50px; }
+	.flight-list .list-row .arrival-time{ text-align: left !important; }
+	.flight-list .list-row .more-detail{ width: 100%; padding-left: 50px; text-align: left; padding-top: 10px; }
+	.bottom-row .col-md-6:last-child{ order: 1; }
+	.bottom-row .col-md-6:first-child{ order: 2; text-align: left;}
+	.bottom-row .other-info li{ text-align: left; padding: 0 20px; width: 100%; }
+	.bottom-row .other-info li span{ display: block; padding-left:25px; }
+	.bottom-row .other-info{ padding: 10px 0px 20px; border-bottom: 1px solid #ecf0f3; justify-content: center; margin: 0 10px; }
+	.bottom-row .total-fairs{ margin: 0 10px;  border-bottom: 1px solid #ecf0f3; text-align: center; padding:15px 10px ; }
+	.bottom-row .total-fairs .small-title{ font-size: 20px; }
+	.bottom-row .total-fairs .totoal-price-small{ font-size: 22px; }
+	.flight-list .list-row .arrival-date span.mobile-show{ font-weight: bold; color: #292d31; padding:0 5px 0 0px; font-size: 17px;}
+	.modify-btn-mobile a{ font-size: 16px; font-weight: bold; color: #16498d; }
+	.modify-btn-mobile a img{ margin-right: 7px; }
+	.search-heading{ padding-bottom: 15px; }
+	#leftFilter{ margin-top: 15px; }
 }
 @media only screen and (max-width: 480px) {
 	.riservation-sec .tab-content{ padding: 10px; }

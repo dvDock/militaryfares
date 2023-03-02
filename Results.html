@@ -77,8 +77,80 @@
 <div class="search">
     <div class="search-heading">
         <div class="row">
-            <div class="col-md-12 text-left">
+            <div class="col col-md-12 text-left">
                 <h3>251 Flights Found</h3>
+            </div>
+            <div class="col mobile-show modify-btn-mobile text-right">
+                <a data-bs-toggle="collapse" href="#leftFilter" role="button" aria-expanded="false" aria-controls="collapseExample"><img src="images/edit-icon.png" alt=""> Modify Search</a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="filter-left-col collapse" id="leftFilter">
+                    <div class="row">
+                        <div class="col heading-main">
+                        <h3><img src="images/edit-icon.png" alt=""> Modify Search</h3>  
+                        </div>
+                    </div>
+                    <div class="stop">
+                        <div class="row">
+                            <div class="col"><h4>Stops</h4>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                    <label class="form-check-label" for="inlineRadio1">Non stop</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                    <label class="form-check-label" for="inlineRadio2">1 Stop</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+                                    <label class="form-check-label" for="inlineRadio3">2+ stops</label>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="price-rang">
+                    <div class="row">
+                        <div class="col">
+                            <h4>Price</h4><label for="customRange1" class="form-label">US$ <span>0</span> - US$ <span>1582</span></label>
+                            <input type="range" class="form-range" id="customRange1">
+                        </div>
+                    </div>
+                    </div>
+                    <div class="departure-time">
+                    <div class="row">
+                    <div class="col">
+                        <h4>Departure Time</h3>
+                        <h5>Depart</h5>
+                        <input type="time" class="form-control" value="" />
+                    </div>
+                    </div>
+                    <div class="row">
+                    <div class="col">
+                        <h5>Return</h5>
+                        <input type="time" class="form-control" value="" />
+                    </div>
+                    </div>
+                    </div>
+                    <div class="flight-duration">
+                    <div class="row">
+                    <div class="col">
+                        <h4>Total Flight Duration</h3>
+                        <h5>Depart</h5>
+                        <input type="time" class="form-control" value="" />
+                    </div>
+                    </div>
+                    <div class="row">
+                    <div class="col">
+                        <h5>Return</h5>
+                        <div class="cs-form">
+                            <input type="time" class="form-control" value="" />
+                            </div>
+                    </div>
+                    </div>
+                    </div>                    
+                </div>
             </div>
         </div>
     </div>
