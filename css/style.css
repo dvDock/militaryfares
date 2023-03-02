@@ -681,12 +681,12 @@ body .select2-container--default .select2-selection--single .select2-selection__
 
 	.payment-process .accordion .accordion-item .accordion-header .accordion-button{ font-size: 20px; font-weight: bold; color: #16498d; position: relative; padding-left: 35px; background: none; padding-bottom: 25px; }
 	.payment-process .accordion .accordion-item .accordion-header .accordion-button:focus{ box-shadow: none; }
-	.payment-process .accordion .accordion-item .accordion-header .accordion-button::before{ height: 28px; width: 28px; background: #e8eef6; border-radius: 100%; text-align: center; font-size: 15px; color: #16498d; line-height: 28px; content: '1'; position: absolute; left: 0; top: 15px; }
+	.payment-process .accordion .accordion-item .accordion-header .accordion-button .number{ height: 28px; width: 28px; background: #e8eef6; border-radius: 100%; text-align: center; font-size: 15px; color: #16498d; line-height: 28px; position: absolute; left: 0; top: 15px; }
 	
 	.payment-process .accordion .accordion-item .accordion-header .accordion-button::after{ height: 35px; width: 35px; background-color: #fff; border-radius: 100%; text-align: center; content: ''; position: absolute; right: 0; top: 10px; box-shadow: 0 0 7px rgba(0, 0, 0, 0.15); background-image: url('../images/min-icon.png'); background-position: center; background-repeat: no-repeat; }
 	
 	.payment-process .accordion .accordion-item .accordion-header .accordion-button.collapsed{ background: none; color: #92979e; }
-	.payment-process .accordion .accordion-item .accordion-header .accordion-button.collapsed::before{ color: #92979e; }
+	.payment-process .accordion .accordion-item .accordion-header .accordion-button.collapsed .number{ color: #92979e; }
 
 	.payment-process .accordion .accordion-item .accordion-header .accordion-button.collapsed::after{ background-image: url('../images/plus-icon.png'); }
 	.total-result{ border-top: 1px solid #ecf0f3; }
@@ -724,7 +724,7 @@ body .select2-container--default .select2-selection--single .select2-selection__
 	.mobile-show .flight-list .list-row .location{ text-align: left !important; padding-left: 50px; padding-top: 10px; padding-bottom: 10px; }
 	.flight-list .list-row .flight-name{ padding-right: 10px; }
 	.flight-list .list-row .departure-time{ width: auto; }
-	.flight-list .list-row .stops{ width: auto; border-left: 1px solid #aebac4; }
+	.flight-list .list-row .stops{ width: auto; border-left: 1px solid #aebac4; padding: 0 0 0 5px; }
 	.mobile-show .flight-list .list-row .location span{ display: none; padding: 0; }
 	.flight-list .list-row .arrival-date{ width: auto; padding-left: 50px; }
 	.flight-list .list-row .arrival-time{ text-align: left !important; }
@@ -742,6 +742,8 @@ body .select2-container--default .select2-selection--single .select2-selection__
 	.modify-btn-mobile a img{ margin-right: 7px; }
 	.search-heading{ padding-bottom: 15px; }
 	#leftFilter{ margin-top: 15px; }
+	.additional-services .items button.item-btn, .additional-services .missed-connection-items button.item-btn, 
+	.additional-services .support-level-items button.item-btn{ margin: 0 auto; left: 0px; right: 0; width: 85%; }
 }
 @media only screen and (max-width: 480px) {
 	.riservation-sec .tab-content{ padding: 10px; }
